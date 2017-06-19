@@ -8,12 +8,12 @@
 	  <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	  <meta name="viewport" content="width=device-width, initial-scale=1">
 
-	  <title>100 Days</title>
+    <title>{{ site.title }}</title>
     <meta name="description" content="{{ site.description }}">
 
 	  <link rel="stylesheet" href="/assets/main.css">
-	  <link rel="canonical" href="http://localhost:4000/">
-	  <link rel="alternate" type="application/rss+xml" title="100 days" href="/feed.xml">
+    <link rel="canonical" href="{{ site.production_url }}{{ page.url | replace:'index.html',''}}">
+    <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="/feed.xml">
 	  <link rel="stylesheet" href="/assets/tachyons.min.css"/>
       <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700|Open+Sans+Condensed:300,700|Source+Sans+Pro:300,400,400i,600" rel="stylesheet">
 	</head>
@@ -74,7 +74,7 @@
         <!-- FOOTER -->
         <footer class="dib w-100 mid-gray tc pt4 pb1" style="background-color:#f4f4f4">
             <small class="f6 mt4">
-                <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/"><img class="pa2" alt="Creative Commons Licence" style="border-width:0" src="https://i.creativecommons.org/l/by-nc-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
+                <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img class="pa2" alt="Creative Commons Licence" style="border-width:0" src="https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
                 <br>
                 <b><a href="https://envirodatagov.org"><p class="pt1">The Environmental Data & Governance Initiative, 2017</p></a></b>
             </small>

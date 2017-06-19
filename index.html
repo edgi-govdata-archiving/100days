@@ -12,7 +12,7 @@
     <meta name="description" content="{{ site.description }}">
 
 	  <link rel="stylesheet" href="/assets/main.css">
-	  <link rel="canonical" href="http://localhost:4000/">
+    <link rel="canonical" href="{{ site.production_url }}{{ page.url | replace:'index.html',''}}">
     <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="/feed.xml">
 	  <link rel="stylesheet" href="/assets/tachyons.min.css"/>
       <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700|Open+Sans+Condensed:300,700|Source+Sans+Pro:300,400,400i,600" rel="stylesheet">

@@ -19,6 +19,7 @@ description: >
   EDGI is producing a series of reports on the early days of the Trump administration.  In these reports, EDGI authors systematically investigate topics including the historical precedents for Trump’s attack on the EPA, consequences for toxics regulation and environmental justice, the influence of the fossil fuel industry on the new administration, changes to the public presentation of climate science, and the new administration’s hostility to scientific research and evidence.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://100days.envirodatagov.org" # the base hostname & protocol for your site, e.g. http://example.com
+production_url: "https://100days.envirodatagov.org" # Used for canonical url meta tag
 twitter_username: EnviroDGI
 github_username:  edgi-govdata-archiving
 

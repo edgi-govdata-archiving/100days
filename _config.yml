@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: 100 Days Report
+title: 100 Days and Counting &ndash; EDGI
 email: EnviroDGI@protonmail.com
 description: >
   EDGI is producing a series of reports on the early days of the Trump administration.  In these reports, EDGI authors systematically investigate topics including the historical precedents for Trump’s attack on the EPA, consequences for toxics regulation and environmental justice, the influence of the fossil fuel industry on the new administration, changes to the public presentation of climate science, and the new administration’s hostility to scientific research and evidence.

@@ -5,14 +5,16 @@ body, h1, h2, h3, h4, h5, h6,
 p, blockquote, pre, hr,
 dl, dd, ol, ul, figure {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
+
+
 
 /**
  * Basic styling
  */
 body {
 	font: 400 16px/1.5 'Source Sans Pro', sans-serif;}
-  /**font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;**/
   color: black;
   background-color: #fdfdfd;
   -webkit-text-size-adjust: 100%;
@@ -20,40 +22,44 @@ body {
   -moz-font-feature-settings: "kern" 1;
   -o-font-feature-settings: "kern" 1;
   font-feature-settings: "kern" 1;
-  font-kerning: normal; }
-
+  font-kerning: normal;
+}
 .tile {
-    position: relative;
-    margin-left: 0;
-    margin-right: 0;
-    display: table;
+  position: relative;
+  margin-left: 0;
+  margin-right: 0;
+  display: table;
 }
 .tile-content {
-    height: inherit;
-    width: inherit;
-    display: table-cell;
-    vertical-align: middle;
-    text-align: center;
-    padding-left: 10%;
-    padding-right: 10%;
-    }
-#title {
-    float: left;
-    background-color:#4FBBA9}
-#ch1 {
-    float: left;
-    }
-
-#intro {
-    float: right;
-    background-color: #393939;
-    color: white;}
-#soon {
-    background-color:#393939;
-    float: right;}
-#comp {
-    background-color: #4FBBA9;
+  height: inherit;
+  width: inherit;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
 }
+#title {
+  float: left;
+  background-color:#4FBBA9
+}
+#ch1 {
+  float: left;
+}
+#intro {
+  float: right;
+  background-color: #393939;
+  color: white;
+}
+#soon {
+  background-color:#393939;
+  float: right;
+}
+#comp {
+  background-color: #4FBBA9;
+}
+
+
 
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -62,33 +68,45 @@ h1, h2, h3, h4, h5, h6,
 p, blockquote, pre,
 ul, ol, dl, figure,
 .highlight {
-  margin-bottom: 15px; }
+  margin-bottom: 15px;
+}
+
+
 
 /**
  * Images
  */
 img {
   max-width: 100%;
-  vertical-align: middle; }
+  vertical-align: middle;
+}
+
+
 
 /**
  * Figures
  */
 figure > img {
-  display: block; }
-
+  display: block;
+}
 figcaption {
-  font-size: 14px; }
+  font-size: 14px;
+}
+
+
 
 /**
  * Lists
  */
 ul, ol {
-  margin-left: 30px; }
-
+  margin-left: 30px;
+}
 li > ul,
 li > ol {
-  margin-bottom: 0; }
+  margin-bottom: 0;
+}
+
+
 
 /**
  * Headings
@@ -100,21 +118,27 @@ h1, h2, h3, h4, h5, h6 {
     padding: 0;
 }
 
+
+
 /**
  * Links
  */
 a {
   color: #4FBBA9;
-  text-decoration: none; }
+  text-decoration: none;
+}
   a:hover {
     color: #636363;
-    text-decoration: underline; }
+    text-decoration: underline;
+  }
   .dark{
     color: white;
-    text-decoration: none;}
+    text-decoration: none;
+  }
   a.dark:hover {
     color: white;
-    text-decoration: underline;}
+    text-decoration: underline;
+  }
 
 
 
@@ -122,37 +146,35 @@ a {
  * Button
  */
 .button {
-    position: relative;
-    display: inline-block;
-    font-family: 'Open Sans Condensed', sans-serif;
-    font-size: 13px;
-    line-height: 24px;
-    padding: 12px 35px;
-    color: #fff;
-    background-color: #4fbba9;
-    border: 1px solid #4fbba9;
-    text-transform: uppercase;
-    -webkit-border-radius: 3px;
-    -moz-border-radius: 3px;
-    -o-border-radius: 3px;
-    border-radius: 3px;
-    -webkit-transition: all 0.3s;
-    -moz-transition: all 0.3s;
-    -ms-transition: all 0.3s;
-    -o-transition: all 0.3s;
-    transition: all 0.3s;
+  position: relative;
+  display: inline-block;
+  font-family: 'Open Sans Condensed', sans-serif;
+  font-size: 13px;
+  line-height: 24px;
+  padding: 12px 35px;
+  color: #fff;
+  background-color: #4fbba9;
+  border: 1px solid #4fbba9;
+  text-transform: uppercase;
+  -webkit-border-radius: 3px;
+  -moz-border-radius: 3px;
+  -o-border-radius: 3px;
+  border-radius: 3px;
+  -webkit-transition: all 0.3s;
+  -moz-transition: all 0.3s;
+  -ms-transition: all 0.3s;
+  -o-transition: all 0.3s;
+  transition: all 0.3s;
 }
-
 .button:hover {
-    color: #4fbba9;
-    background-color: #fff;
-    border: 1px solid #393939;
+  color: #4fbba9;
+  background-color: #fff;
+  border: 1px solid #393939;
 }
-
 .button:active {
-    color: #393939;
-    background-color: #4fbba9;
-    border: 1px solid #393939;
+  color: #393939;
+  background-color: #4fbba9;
+  border: 1px solid #393939;
 }
 
 
@@ -166,6 +188,8 @@ blockquote {
   padding-left: 15px;
   font-size: 18px;
   letter-spacing: -1px;
-  font-style: italic; }
+  font-style: italic;
+}
   blockquote > :last-child {
-    margin-bottom: 0; }
+    margin-bottom: 0;
+  }

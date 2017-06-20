@@ -54,7 +54,7 @@ ul, ol, dl, figure, hr,
   #title {
       float: right;
       background-color:#4FBBA9;}
-      
+
   #ch1 {
       float: right;}
 
@@ -129,12 +129,6 @@ img {
 figure > img {
   display: block; }
 
-.figure {
-    max-width: --measure;
-    font-size: --f6;
-    margin-right:auto;
-    margin-left:auto;
-}
 
 /**
  * Lists

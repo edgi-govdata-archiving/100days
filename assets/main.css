@@ -119,6 +119,45 @@ a {
 
 
 /**
+ * Button
+ */
+.button {
+    position: relative;
+    display: inline-block;
+    font-family: 'Open Sans Condensed', sans-serif;
+    font-size: 13px;
+    line-height: 24px;
+    padding: 12px 35px;
+    color: #fff;
+    background-color: #4fbba9;
+    border: 1px solid #4fbba9;
+    text-transform: uppercase;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -o-border-radius: 3px;
+    border-radius: 3px;
+    -webkit-transition: all 0.3s;
+    -moz-transition: all 0.3s;
+    -ms-transition: all 0.3s;
+    -o-transition: all 0.3s;
+    transition: all 0.3s;
+}
+
+.button:hover {
+    color: #4fbba9;
+    background-color: #fff;
+    border: 1px solid #393939;
+}
+
+.button:active {
+    color: #393939;
+    background-color: #4fbba9;
+    border: 1px solid #393939;
+}
+
+
+
+/**
  * Blockquotes
  */
 blockquote {

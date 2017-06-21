@@ -13,14 +13,12 @@
 			  src="https://code.jquery.com/jquery-3.2.1.min.js"
 			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 			  crossorigin="anonymous"></script>
-
         <script type="text/javascript">
-          $(document).ready(function(){
+          $(window).ready(function(){
             $("header").sticky({topSpacing:0, wrapperClassName:"header-wrapper"});
-            $('.hide').toggleClass('hide',$('#sticky-header').hasClass('tiny'))
         });
         </script>
-        <header id="sticky-header" class="z-2 w-100 pv1">
+        <header id="sticky-header" class=" w-100 pv1">
 
             <a href="/index.html" title="Home">
                 <img id="nav-logo" src="assets/edgi-logo-b.png">

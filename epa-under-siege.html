@@ -7,34 +7,40 @@
     	<link rel="stylesheet" href="/assets/post.css">
     	<link rel="stylesheet" href="/assets/tachyons.min.css"/>
     	<link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700|Open+Sans+Condensed:300,700|Source+Sans+Pro:300,400,400i,600" rel="stylesheet">
+        <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
+        <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
     </head>
     <body class="bg-white">
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+        <script
+			  src="https://code.jquery.com/jquery-3.2.1.min.js"
+			  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
+			  crossorigin="anonymous"></script>
+        <script src="jquery.sticky.js"></script>
         <script type="text/javascript">
-            bar = $(window).height();
-            $(window).on("scroll touchmove", function () {
-                $('#sticky-header').toggleClass('tiny', $(document).scrollTop() > bar)
-                $('#nav-logo').toggleClass('nav-logo-sm',$('#sticky-header').hasClass('tiny'))
-                $('.hide').toggleClass('show',$('#sticky-header').hasClass('tiny'))
-            });
+          $(document).ready(function(){
+            $("#sticky-header").sticky({topSpacing:0, wrapperClassName:"header-wrapper"});
+        });
         </script>
-        <header id="sticky-header" class="header bg-black-0 fixed z-2 w-100 ph2">
-          <nav class="pt1 ttu tracked">
-            <a class="data link dim white dib mr3" href="/index.html" title="Home"><img id="nav-logo" class="nav-logo" alt="logo"></a>
-            <h3 id="nav-txt" class="f5 ttu ml5 hide">Part 1</h3>
-            <h3 id="nav-txt" class="f5 fw3 ttu hide"> | The EPA Under Siege</h3>
-          </nav>
+        <header id="sticky-header" class="w-100 pv1">
+
+            <a href="/index.html" title="Home">
+                <img id="nav-logo" src="assets/edgi-logo-b.png">
+            </a>
+            <div id="nav-txt" class="di"><h3 class="f5 ttu tl mb0 di">Part 1</h3><h3 class="f5 fw3 ttu tl mb0 di"> | The EPA Under Siege</h3></div>
+
         </header>
 
         <div class="mb4 dib ">
-            <div id="intro" class="vh-75 w-100 dt tc tile">
+
+            <div class="vh-75 w-100 dt tc tile">
+                <a href="/index.html" title="Home"><img id="top-logo" class="ph3" src="assets/edgi-logo-b.png"></a>
                 <div class="tile-content" style="background:url(assets/ch1-cover.jpg); hspace:0px;">
                     <h3 class="f4 fw1 ttu white-80">Part 1</h3>
               			<h1 class="fw6 f-5-l f1-m f1-ns ttu white">The EPA Under Siege</h1>
               			<h2 class="f3 fw3 ttu white-80">Trump’s Assault in History and Testimony</h2>
                 </div>
     		    </div>
-            <div id="contr" class="vh-25 w-100 dt tc tile pv4-ns">
+            <div id="contr" class="vh-25 w-100 dt tc tile pv0-l pv2-m pv4-ns">
                 <div class="tile-content">
                     <h3 class="f3 ttu white">Contributors</h3>
                     <p class="f4 fw2 white lh-normal">Christopher Sellers, Lindsey Dillon, Jennifer Liss Ohayon, Nick Shapiro, Marianne Sullivan, Chris Amoss, Stephen Bocking, Phil Brown, Vanessa De la Rosa, Jill Harrison, Sara Johns, Katherine Kulik, Rebecca Lave, Michelle Murphy, Liza Piper, Lauren Richter, Sara Wylie</p>
@@ -57,8 +63,7 @@
                 </a>
             </div>
         </div>
-        <script src="//ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
-        <script src="jquery.sticky.js"></script>
+
         <script type="text/javascript">
           $(document).ready(function(){
             $(".back-to-top").sticky({topSpacing:100});
@@ -875,7 +880,7 @@
                 <a id="t.54"></a>
                 <blockquote class="appendix">
                                 <p>
-                                    <a id="kix.3mmtnttay904"></a>&hellip;the staff &lsquo;were&rsquo; so busy answering FOIA requests from Congress [laughs]&ndash; not from citizens who really want to know something but from Congressmen, and just everything they do being under this scrutiny that it affects people&rsquo;s morale, it affects their work habits, it affects what they write down. You&#39;re always thinking, okay, is this gonna show up in a newspaper or can we have this discussion? So I mean it shouldn&#39;t be that way&hellip;<a href="#id.usx3fmszgf08">Congress</a><a href="#id.usx3fmszgf08">sent a FOIA request that they wanted every email, whatever, having to do with the Waters of the US rule. Can you imagine?</a>Every&mdash;you know, had to search&hellip; It&#39;s meant to tie you up and, of course, you have to answer them and, you know, we do have computer systems and everything but it really&hellip; It just ties you up in knots&hellip;. And it also affects morale because the staff feel like their every word is under scrutiny and then they get paranoid about putting things down or writing things. It&#39;s&mdash;I really saw it have a negative affect.</p>
+                                    <a id="kix.3mmtnttay904"></a>&hellip;the staff &lsquo;were&rsquo; so busy answering FOIA requests from Congress [laughs]&ndash; not from citizens who really want to know something but from Congressmen, and just everything they do being under this scrutiny that it affects people&rsquo;s morale, it affects their work habits, it affects what they write down. You&#39;re always thinking, okay, is this gonna show up in a newspaper or can we have this discussion? So I mean it shouldn&#39;t be that way&hellip;<a href="#id.usx3fmszgf08">Congress sent a FOIA request that they wanted every email, whatever, having to do with the Waters of the US rule. Can you imagine?</a>Every&mdash;you know, had to search&hellip; It&#39;s meant to tie you up and, of course, you have to answer them and, you know, we do have computer systems and everything but it really&hellip; It just ties you up in knots&hellip;. And it also affects morale because the staff feel like their every word is under scrutiny and then they get paranoid about putting things down or writing things. It&#39;s&mdash;I really saw it have a negative affect.</p>
                 </blockquote>
                 <a id="t.3a3dc0e634fa4ba09cca37040f58bf66be822535"></a>
                 <a id="t.55"></a>

@@ -15,6 +15,8 @@ body {
   /**font: 400 16px/1.5 "Helvetica Neue", Helvetica, Arial, sans-serif;**/
   word-wrap: break-word;
   color: black;
+  overflow-y: scroll;
+  scroll-behavior: smooth;
   -webkit-text-size-adjust: 100%;
   -ms-text-size-adjust: 100%;
   -webkit-font-feature-settings: "kern" 1;
@@ -258,43 +260,45 @@ pre > code {
 /**
  * Site header
  */
-.site-header {
-  min-height: 55.95px;
-  position: fixed;
-}
-.nav-logo {
+
+#top-logo {
     width: auto;
     height: 50px;
-    content: url(/assets/edgi-logo-b.png);
     position: absolute;
-    display:  inline;
     margin-top: 10px;
+    z-index: 2;
 }
-.nav-logo-sm {
-    width: auto;
+#nav-txt {
+    height: inherit;
+    vertical-align: middle;
+}
+
+#nav-logo{
     height: 30px;
-    content: url(/assets/edgi-logo-b.png);
-    position: relative;
-    margin-top: 0px;
+    padding-right: 20px;
+    padding-left: 5px;
+    overflow: hidden;
+    display: inline;
 }
-.header {
+
+header {
+  top:100%;
   width:100%;
-  height:60px;
-  position:fixed;
-  top:0;
-  left:0;
-  transition: height 500ms, background 500ms;
-  color: none;
-}
-.header.tiny {
   height:40px;
-  background: white;
+  position:fixed;
+  left:0;
+  background-color: #fff;
   border-bottom: #d2d2d2 1px solid;
-  color: #393939;
+  display: block;
+  z-index: 3;
 }
+.header-wrapper {
+  position: absolute;
+  top: 100%;
+  width: 100%;
+  display: inline-block;
+}
+
 .hide {
     display: none;
-}
-.show {
-    display: inline-block;
 }

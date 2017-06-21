@@ -8,8 +8,6 @@ dl, dd, ol, ul, figure {
   padding: 0;
 }
 
-
-
 /**
  * Basic styling
  */
@@ -27,6 +25,12 @@ body {
 p, ul, ol, td, th {
   font-family: 'Source Sans Pro', sans-serif;
 }
+p {
+  padding-top: 5px;
+  line-height: 1.5em;
+  font-size: 1.1em;
+}
+
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
@@ -55,20 +59,14 @@ ul, ol, dl, figure, hr,
   float: right;
   background-color:#4FBBA9;
 }
-  .tile-content {
-    background-image:url(assets/CH1.png);
-    }
-#ch1 {
-  float: right;
-}
-#intro {
-  float: left;
-  background-color: #393939;
-  color: white;
-}
-#soon {
-  background-color:rgba(79, 187, 169, 0.7);
-  float: left;
+.tile-content {
+  height: inherit;
+  width: inherit;
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  padding-left: 10%;
+  padding-right: 10%;
 }
 #contr {
   background-color: #393939;
@@ -118,8 +116,6 @@ ul, ol, dl, figure, hr,
   text-align: center;
 }
 
-
-
 /**
  * Images
  */
@@ -127,8 +123,6 @@ img {
   max-width: 100%;
   vertical-align: middle;
 }
-
-
 
 /**
  * Figures
@@ -141,8 +135,6 @@ figcaption {
   font-size: 14px;
 }
 
-
-
 /**
  * Lists
  */
@@ -153,8 +145,6 @@ li > ul,
 li > ol {
   margin-bottom: 0;
 }
-
-
 
 /**
  * Headings
@@ -172,8 +162,6 @@ h1, h2, h3, h4, h5, h6, cite {
   font-family: 'Source Sans Pro', sans-serif;
 }
 
-
-
 /**
  * Links
  */
@@ -181,18 +169,10 @@ a {
   color: #4FBBA9;
   text-decoration: none;
 }
-  a:hover {
-    color: #111;
-    text-decoration: underline;
-  }
-  .social-media-list a:hover {
-    text-decoration: none;
-  }
-  .social-media-list a:hover .username {
-    text-decoration: underline;
-  }
-
-
+a:hover {
+  color: #111;
+  text-decoration: underline;
+}
 
 /**
  * Blockquotes
@@ -207,36 +187,38 @@ blockquote {
   font-style: italic;
   quotes: '“' '”';
 }
-  blockquote.chap {
+blockquote.appendix p:before {
+  content: '';
+  content: no-open-quote;
+}
+blockquote.appendix p:first-child:before {
+  content: '“';
+  content: open-quote;
+  font:400 1.8em 'Source Sans Pro', sans-serif;
+  line-height: inherit;
+  color: #393939;
+  position: relative;
+  float: left;
+}
+blockquote.appendix p:after {
+  content: '';
+  content: no-close-quote;
+}
+blockquote.appendix p:last-child:after {
+  content: ' ”';
+  content: close-quote;
+  font:400 1.8em 'Source Sans Pro', sans-serif;
+  line-height:0.8em;
+  color: #393939;
+  position: absolute;
+}
 
-  }
-  blockquote.appendix p:before {
-    content: '';
-   	content: no-open-quote;
-  }
-  blockquote.appendix p:first-child:before {
-  	content: '“';
-   	content: open-quote;
-  	font:400 1.8em 'Source Sans Pro', sans-serif;
-    line-height: inherit;
-    color: #393939;
-    position: relative;
-    float: left;
-  }
-  blockquote.appendix p:after {
-  	content: '';
-   	content: no-close-quote;
-  }
-  blockquote.appendix p:last-child:after {
-  	content: ' ”';
-   	content: close-quote;
-  	font:400 1.8em 'Source Sans Pro', sans-serif;
-    line-height:0.8em;
-    color: #393939;
-    position: absolute;
-  }
-
-
+figcaption {
+    max-width: 35em;
+    font-size: 0.8em;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 /**
  * Code formatting
@@ -255,11 +237,11 @@ pre {
   padding: 8px 12px;
   overflow-x: auto;
 }
-  pre > code {
-    border: 0;
-    padding-right: 0;
-    padding-left: 0;
-  }
+pre > code {
+  border: 0;
+  padding-right: 0;
+  padding-left: 0;
+}
 
 
 
@@ -271,8 +253,6 @@ pre {
   display: table;
   clear: both;
 }
-
-
 
 /**
  * Site header

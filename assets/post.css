@@ -23,6 +23,9 @@ body {
 
 p, ul, ol, td, th {
     font-family: 'Source Sans Pro', sans-serif;
+    padding-top: 5px;
+    line-height: 1.5em;
+    font-size: 1.1em;
 }
 /**
  * Set `margin-bottom` to maintain vertical rhythm
@@ -51,10 +54,7 @@ ul, ol, dl, figure, hr,
   #title {
       float: right;
       background-color:#4FBBA9;}
-      .tile-content {
-        background-image:url(assets/CH1.png)
-         ;
-      }
+
   #ch1 {
       float: right;}
 
@@ -129,8 +129,6 @@ img {
 figure > img {
   display: block; }
 
-figcaption {
-  font-size: 14px; }
 
 /**
  * Lists
@@ -210,6 +208,12 @@ blockquote.appendix p:last-child:after {
     color: #393939;
     position: absolute;}
 
+figcaption {
+    max-width: 35em;
+    font-size: 0.8em;
+    margin-left: auto;
+    margin-right: auto;
+}
 
 
 /**

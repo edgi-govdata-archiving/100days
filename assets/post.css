@@ -71,10 +71,6 @@ ul, ol, dl, figure, hr,
 }
 #aside {
   float: right;
-  position: relative;
-}
-.aside-el {
-  position: relative;
 }
 .back-to-top {
   position: absolute;
@@ -83,7 +79,7 @@ ul, ol, dl, figure, hr,
 }
 .back-to-top-2 {
   position: absolute;
-  top: 39000px;
+  top: 46000px;
   left: 150px;
 }
 .back-to-article {
@@ -100,7 +96,7 @@ ul, ol, dl, figure, hr,
 }
 .sticky-wrapper-2 {
   position: absolute;
-  top: 39000px;
+  top: 46000px;
   width: 100px;
   display: inline-block;
   text-align: center;
@@ -148,11 +144,14 @@ li > ol {
  * Headings
  */
 h1, h2, h3, h4, h5, h6, cite {
-	font-family:'Open Sans Condensed', sans-serif;
+  font-family:'Open Sans Condensed', sans-serif;
   font-weight: 700;
  	color: #393939;
   text-align: center;
   text-transform: uppercase;
+}
+.article h1, .appendix h1 {
+  padding-top: 2em;
 }
 .table-title {
   padding-bottom: 15px;

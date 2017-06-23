@@ -1,0 +1,8 @@
+{
+  "name": "100days",
+  "description": "This app is the mini-site for EDGI's First 100 Days report.",
+  "website": "https://100days.envirodatagov.org/",
+  "repository": "http://github.com/edgi-govdata-archiving/100days/",
+  "logo": "https://pbs.twimg.com/profile_images/838966379348905985/2GSiia1I.jpg",
+  "image": "heroku/ruby"
+}

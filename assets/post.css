@@ -287,8 +287,3 @@ header {
   width: 100%;
   display: block;
 }
-
-
- sup, sub {
-     position: fixed;
- }

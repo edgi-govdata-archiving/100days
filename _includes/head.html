@@ -8,7 +8,7 @@
   <link rel="canonical" href="{{ site.production_url }}{{ page.url | replace:'index.html',''}}">
   <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="/feed.xml">
 
-  <link rel="stylesheet" href="/assets/{% if site.baseurl %}main.css{% else %}post.css{% endif %}">
+  <link rel="stylesheet" href="/assets/{% if page.url == '/' %}main.css{% else %}post.css{% endif %}">
   <link rel="stylesheet" href="/assets/tachyons.min.css"/>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700|Open+Sans+Condensed:300,700|Source+Sans+Pro:300,400,400i,600" rel="stylesheet">
   <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
@@ -27,7 +27,7 @@
 
   {% if page.author %}<meta property="article:author" content="{{ page.author }}"/>{% endif %}
 
-  {% if site.baseurl %}
+  {% if page.url == '/' %}
   {% else %}
     <!-- Scripts -->
     <script

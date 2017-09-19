@@ -332,6 +332,7 @@ ol ol ol > li {
 }
 header {
     margin-bottom: 10vh;
+
 }
 #wrapper2{
     width: 100vw;
@@ -346,6 +347,7 @@ header {
     justify-content: space-around;
     align-content: center;
     flex-wrap: nowrap;
+    background-color: #efefef;
 }
 #bg1 {
     box-sizing: content-box;
@@ -389,12 +391,11 @@ header {
     margin: 0 auto;
     height: 100vh;
     min-height: 400px;
-    width: 90vw;
+    width: 50vw;
     background: url("/assets/mustafa.jpg");
     background-size: cover;
     background-position: top;
     background-repeat: no-repeat;
-    top: 10vh;
 }
 
 #title {
@@ -407,7 +408,7 @@ header {
 #title > h1 {
     display: inline;
     background-color: white;
-    padding: 0 0.2em 0 0.2em;
+    padding: 0 0.2em;
     box-sizing: border-box;
     margin: 0;
 }
@@ -416,7 +417,7 @@ header {
     display: inline;
     position: relative;
     top: 5vh;
-    left: 15vw;
+    left: 2vw;
     box-sizing: content-box;
     flex: 2;
     height:0;
@@ -425,7 +426,7 @@ header {
     display: inline;
     background-color: white;
     margin: 0;
-    padding: 0 0.3em 0 0.3em;
+    padding: 0 0.5em;
     box-sizing: border-box;
 }
 .intro {
@@ -596,7 +597,7 @@ p > mark {
       margin: 0;
       display: inline;
       position: relative;
-      background-color: white;
+      background-color: #efefef;;
       box-sizing: content-box;
   }
   #wrapper2 {
@@ -673,6 +674,7 @@ p > mark {
           height: 50vh;
           flex: 3;
           order: 2;
+
       }
       #p2-inner-wrapper > h1 {
           font-size: 3em;
@@ -697,7 +699,7 @@ p > mark {
           font-size: 1em;
           flex: 0;
           order: 3;
-          align-self: flex-end;
+
       }
       #spillMap, #pesticideMap {
           width: 100vw;
@@ -709,4 +711,26 @@ p > mark {
           transform: translateX(-50%);
           z-index:1
       }
+      .back-to-article{
+          visibility: collapse;
+      }
+      #title > h1 {
+          font-size: 3em;
+          top: 0vh;
+      }
+      #subtitle  {
+          left: 2vw;
+      }
+      #intro {
+          width: 80vw;
+      }
+      #bg2a {
+          top: 0;
+          width: 100vw;
+          height: 50vh;
+      }
+      header {
+          margin-bottom: 0vh;
+      }
+
   }

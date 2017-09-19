@@ -30,3 +30,6 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'puma'
 gem 'rack-jekyll'
 gem 'rake'
+
+# Permalinks and Redirection
+gem 'jekyll-redirect-from'

@@ -19,7 +19,7 @@
   <meta property="og:type" content="article"/>
   <meta property="og:url" content="{{ site.production_url }}{{ page.url | replace:'index.html',''}}"/>
 
-  {% if page.image %}
+  {% if page.og-image %}
     <meta property="og:image" content="{{ site.production_url }}/assets/{{ page.og-image }}" />
   {% else %}
     <meta property="og:image" content="{{ site.production_url }}/assets/flag-joe-raedle.jpg" />

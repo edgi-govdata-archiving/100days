@@ -332,7 +332,7 @@ ol ol ol > li {
 }
 header {
     margin-bottom: 10vh;
-    background-color: #efefef;
+
 }
 #wrapper2{
     width: 100vw;
@@ -347,6 +347,7 @@ header {
     justify-content: space-around;
     align-content: center;
     flex-wrap: nowrap;
+    background-color: #efefef;
 }
 #bg1 {
     box-sizing: content-box;

@@ -368,9 +368,8 @@ header {
     background-position: bottom;
     background-size: cover;
     position: relative;
-    height: 110vh;
+    height: 100vh;
     width: 50vw;
-    min-height: 500px;
     background-repeat: no-repeat;
     box-sizing: border-box;
     margin: 0;
@@ -646,7 +645,12 @@ p > mark {
       z-index:1
   }
 
+  @media only screen and (min-width : 1000px) and (max-height:800px){
+      .chbg{
+          min-height: 100%;
+      }
 
+  }
   @media only screen and (min-width : 320px) and (max-width : 1000px) {
       #bg2 {
           position: relative;
@@ -686,7 +690,7 @@ p > mark {
           order: 2;
       }
       .part {
-          bottom: 60vh;
+          visibility: collapse;
       }
       .part > h2 {
           padding: 0 0.5em;

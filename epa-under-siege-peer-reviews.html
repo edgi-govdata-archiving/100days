@@ -6,48 +6,32 @@ author: "Dr. Richard Andrews, Dr. Nancy Langston, Dr. Jay Turner"
 ---
 
 <body class="bg-white">
-    <script
-          src="https://code.jquery.com/jquery-3.2.1.min.js"
-          integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-          crossorigin="anonymous"></script>
-    <script src="jquery.sticky.js"></script>
+
     <script type="text/javascript">
       $(document).ready(function(){
-        $("#sticky-header").sticky({topSpacing:0, wrapperClassName:"header-wrapper"});
+        $("#nav").sticky({topSpacing:0, wrapperClassName:"nav-wrapper"});
     });
     </script>
-    <header id="sticky-header" class="w-100 pv1">
-
-        <a href="/index.html" title="Home">
+    <div id="nav" class="w-100 pv1">
+        <a href="/index.html" title="Home" class="">
             <img id="nav-logo" src="assets/edgi-logo-b.png">
         </a>
         <div id="nav-txt" class="di"><h3 class="f5 ttu tl mb0 di">Part 1</h3><h3 class="f5 fw3 ttu tl mb0 di"> | The EPA Under Siege</h3></div>
-
-    </header>
-
-    <div class="mb4 dib ">
-
-        <div class="vh-75 w-100 dt tc tile">
-            <a href="/index.html" title="Home"><img id="top-logo" class="ph3" src="assets/edgi-logo-b.png"></a>
-            <div class="tile-content" style="background:url(assets/ch1-cover.jpg); hspace:0px;">
-                <h3 class="f4 fw1 ttu white-80">Part 1</h3>
-                    <h1 class="fw6 f-5-l f1-m f1-ns ttu white">Peer Reviews</h1>
-                    <h2 class="f3 fw3 ttu white-80">The EPA Under Siege: Trump’s Assault in History and Testimony</h2>
-            </div>
-            </div>
-        <div id="contr" class="vh-25 w-100 dt tc tile pv0-l pv2-m pv4-ns">
-            <div class="tile-content">
-                <h3 class="f3 ttu white">Contributors</h3>
-                <p class="f4 fw2 white lh-normal">Dr. Richard Andrews, Dr. Nancy Langston, Dr. Jay Turner</p>
-            </div>
-            </div>
     </div>
+    <header id="wrapper1">
+        <div id="h_wrapper">
+            <div><a id="logo" href="/index.html" title="Home" class=""><img alt="edgi-logo" src="/assets/edgi-logo-b.png" style="width:5vh;min-width:35px; height:auto;"></a></div>
+            <div id="bg1">
+                <div id="title"><h1 class="fw6 f-5-l f4-m f4-ns ttu">Peer Reviews</h1></div>
+                <div id="subtitle"><h2 class="f3 fw3 ttu">The EPA Under Siege: Trump’s Assault in History and Testimony</h2></div>
 
-    <script type="text/javascript">
-      $(document).ready(function(){
-        $(".back-to-article").sticky({topSpacing:100, wrapperClassName:"back-to-article-wrapper"});
-      });
-    </script>
+            </div>
+            <div id="intro_pr" class="intro tc pv4-ns">
+                <p class="f5-l f7-m f7-ns fw1 lh-copy">Dr. Richard Andrews, Dr. Nancy Langston, Dr. Jay Turner</p>
+            </div>
+            <div id="down"></div>
+        </div>
+    </header>
 
     <div class="back-to-article dib mh3">
         <div class="dib">

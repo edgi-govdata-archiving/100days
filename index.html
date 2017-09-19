@@ -1,59 +1,113 @@
 ---
-layout: default
+layout: front
 ---
 
 <body>
 <div>
-  <!--TITLE-->
-	<div id="title" class="vh-75 w-100 dt tc tile">
-    <div class="tile-content ph2">
-      <div class="pv3 ph3"><img alt="edgi-logo" src="/assets/edgi-logo-b.png" style="width:50px; height:auto;"></div>
-    	<h1 class="fw6 f-5-l f1-m f1-ns ttu white lh-title mv3">The First 100 Days</h1>
-    	<h2 class="f3 fw3 ttu white-80">And Counting</h2>
-    </div>
-	</div>
+  <!--TITLE + INTRO-->
 
-  <!-- CHAPTER 1 -->
-  <div id="intro" class=" vh-25 w-100 dt tc tile pv4-ns">
-    <div class="tile-content">
-      <p class="f2 f5-ns fw1 lh-4 white"> EDGI is producing a series of reports on the early days of the Trump administration.  In these reports, EDGI authors systematically investigate topics including the historical precedents for Trump’s attack on the EPA, consequences for toxics regulation and environmental justice, the influence of the fossil fuel industry on the new administration, changes to the public presentation of climate science, and the new administration’s hostility to scientific research and evidence.</p>
-    	<p class="pt0 f6 fw1 white">Series editors: Rebecca Lave and Sara Wylie</p>
-    	<p class="pt0 f6 fw1 white">Series designers: James Beach, Kyala Shea, Lourdes Vera</p>
-      <p class="pt0 f6 fw1 white">Website: Shaquilla Singh</p>
-    </div>
-	</div>
+    <header id="wrapper1" >
 
-	<!-- INTRO BLURB -->
-	<div id="ch1" class="vh-50 w-50-l w-100-m w-100-ns dt tc tile pv4-ns">
-    <div class="tile-content">
-      <a href="epa-under-siege.html">
-        <h3 class="f6 fw2 ttu">Part 1</h3>
-        <h1 class="f1 fw2 ttu" style="color:#4FBBA9;">The EPA Under Siege</h1>
-        <h2 class="f6 f5-l">Trump’s Assault in History and Testimony</h2>
-        <h3 class="f4 fw2">An in-depth analysis of the Environmental Protection Agency (EPA) under Trump and Administrator Scott Pruitt.</h3>
-  		    <div class="button">Read Part 1</div>
-      </a>
-    </div>
-	</div>
-    <div id="comp" class="vh-25 w-50-l w-100-m w-100-ns dt tc tile pv4-ns">
-      <div class="tile-content">
-        <a href="epa-under-siege.html#h.bgps8xwogn0q">
-          <h3 class="f5 fw2 ttu white">Part 1</h3>
-          <h1 class="f2 fw2 ttu white">Interview Compendium</h1>
-          <h3 class="f4 fw2 white">Quotes from over fifty EDGI interviews with long-term federal agency employees</h3>
-        </a>
+
+        <div id="h_wrapper" >
+            <div id="logo"><img alt="edgi-logo" src="/assets/edgi-logo-b.png" style="width:5vh;min-width:35px; height:auto;"></div>
+            <div id="bg" >
+                <div id="title" ><h1 class="fw6 f-5-l f4-m f4-ns ttu">The First 100 Days</h1></div>
+                <div id="subtitle"><h1 class="fw6 f-4-l f4-m f4-ns ttu">And Counting</h1></div>
+
+            </div>
+            <div id="intro" class="container tc pv4-ns">
+                <p class="f5-l f6-m f6-ns fw1 lh-copy"> EDGI is producing a series of reports on the early days of the Trump administration.  In these reports, EDGI authors systematically investigate topics including the historical precedents for Trump’s <a href="epa-under-siege.html">attack on the EPA</a>, consequences for toxics regulation and <a href="pursuing-toxic-agenda.html">environmental justice</a>, the influence of the fossil fuel industry on the new administration, changes to the public presentation of climate science, and the new administration’s hostility to scientific research and evidence.</p><p class="fw1 lh-copy" style="padding-top:0.7em;">Series editors: Rebecca Lave and Sara Wylie; Series designer: Kyala Shea; Website design and development: Shaquilla Singh</p>
+            </div>
+            <!-- <script type="text/javascript">
+            $('#down').click(function () {
+                document.getElementById( 'wrapper3' ).scrollIntoView();
+            });
+            </script> -->
+            <div id="down"></div>
+        </div>
+
+    </header>
+    <section id="wrapper3" >
+
+        <div id="ch2bg" class="chbg"></div>
+        <div class="inner_wrapper">
+            <div class="part"><h2 class="f3 ttu">Part 2</h2></div>
+            <div class="ch_titles w-two-thirds-l w-100-m w-100-ns tl">
+                <a class="tl"href="pursuing-toxic-agenda.html">
+                  <h1 class="f1-l f4-m f4-ns ttu tl">PURSUING A TOXIC AGENDA</h1>
+                  <!-- <h2 class="f3 fw3 ttu tl pv2">Environmental Injustice in the Early Trump Administration</h2> -->
+                  <h3 class="f4 fw2 tl">An examination of how the Trump administration’s actions increase toxic burdens on vulnerable communities.</h3>
+                </a>
+            </div>
+            <div id="buttons">
+                <a class="ttu read_ch"href="pursuing-toxic-agenda.html">
+                    <div class="readch-app">
+                        <div class="ra1">
+                            <h2 class="f4 ttu tl">Read: Pursuing a Toxic Agenda</h2>
+                            <h3 class="f4 fw2 tl">Environmental Injustice in the Early Trump Administration</h3>
+                        </div>
+                        <div id="righta"></div>
+                    </div>
+                </a>
+
+                <a class="readch-app w-100-m ttu"href="mustafa-ali-interview.html">
+                    <div class="readch-app">
+                        <div class="ra1">
+                            <h2 class="f4-l f5-m f5-ns ttu tl"><strong>Read: INTERVIEW WITH MUSTAFA ALI</strong></h2>
+                            <h3 class="f4-l f5-m f5-ns fw2 tl">FORMER HEAD OF THE EPA OFFICE OF ENVIRONMENTAL JUSTICE</h3>
+                        </div>
+                        <div id="righta"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+	</section>
+	<!-- CHAPTER 1 -->
+    <section id="wrapper2" >
+
+        <div id="ch1bg" class="chbg"></div>
+        <div class="inner_wrapper">
+            <div class="part"><h2 class="f3 ttu">Part 1</h2></div>
+            <div class="ch_titles w-two-thirds-l w-100-m w-100-ns tl">
+                <a class="tl"href="epa-under-siege.html">
+                  <h1 class="f1-l f4-m f4-ns ttu tl">The EPA Under Siege</h1>
+                  <!-- <h2 class="f3 fw3 ttu tl pv2">Trump’s Assault in History and Testimony</h2> -->
+                  <h3 class="f4 fw2 tl">An in-depth analysis of the Environmental Protection Agency (EPA) under Trump and Administrator Scott Pruitt.</h3>
+                </a>
+            </div>
+
+            <div id="buttons">
+                <a class="ttu read_ch"href="epa-under-siege.html">
+                        <div class="readch-app">
+                            <div class="ra1">
+                                <h2 class="f4 ttu tl">Read: The EPA Under Siege</h2>
+                                <h3 class="f4 fw2 tl">Trump’s Assault in History and Testimony</h3>
+                            </div>
+                            <div id="righta"></div>
+                        </div>
+                </a>
+
+                <a class="readch-app w-100-m ttu"href="epa-under-siege.html#h.bgps8xwogn0q">
+                    <div class="readch-app">
+                        <div class="ra1">
+                            <h2 class="f4 ttu tl"><strong>Read: Interview Compendium</strong></h2>
+                            <h3 class="f4 fw2 tl">Quotes from over fifty EDGI Interviews with <br>long-term federal agency employees</h3>
+                        </div>
+                        <div id="righta"></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+	</section>
+
       </div>
     </div>
-    <div id="soon" class="vh-25 w-50-l w-100-m w-100-ns dt tc tile">
-      <div class="tile-content">
-        <h3 class="f6 fw2 ttu white">Further Parts</h3>
-        <h1 class="f3 fw2 ttu white">Check back soon for more</h1>
-      </div>
-	  </div>
+
 
   <!-- FOOTER -->
-  <footer class="dib w-100 mid-gray tc pt4 pb1" style="background-color:#f4f4f4">
-      <small class="f6 mt4">
+  <footer class="db mid-gray tc">
+      <small>
           <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/"><img class="pa2" alt="Creative Commons Licence" style="border-width:0" src="https://licensebuttons.net/l/by-nc-sa/4.0/80x15.png" /></a><br />This work is licensed under a <a rel="license" href="https://creativecommons.org/licenses/by-nc-sa/4.0/">Creative Commons Attribution-NonCommercial-ShareAlike 4.0 International License</a>.
           <br>
           <b><a href="https://envirodatagov.org"><p class="pt1">The Environmental Data &amp; Governance Initiative, 2017</p></a></b>

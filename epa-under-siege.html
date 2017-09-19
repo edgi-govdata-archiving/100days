@@ -6,42 +6,34 @@ author: "Christopher Sellers, Lindsey Dillon, Jennifer Liss Ohayon, Nick Shapiro
 ---
 
 <body class="bg-white">
-    <script
-	  src="https://code.jquery.com/jquery-3.2.1.min.js"
-	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
-	  crossorigin="anonymous"></script>
-    <script src="jquery.sticky.js"></script>
     <script type="text/javascript">
       $(document).ready(function(){
-        $("#sticky-header").sticky({topSpacing:0, wrapperClassName:"header-wrapper"});
+        $("#nav").sticky({topSpacing:0, wrapperClassName:"nav-wrapper"});
     });
     </script>
-    <header id="sticky-header" class="w-100 pv1">
+    <div id="nav" class="w-100 pv1">
         <a href="/index.html" title="Home" class="">
             <img id="nav-logo" src="assets/edgi-logo-b.png">
         </a>
         <div id="nav-txt" class="di"><h3 class="f5 ttu tl mb0 di">Part 1</h3><h3 class="f5 fw3 ttu tl mb0 di"> | The EPA Under Siege</h3></div>
+    </div>
+    <header id="wrapper1">
+        <div id="h_wrapper">
+            <div><a id="logo" href="/index.html" title="Home" class=""><img alt="edgi-logo" src="/assets/edgi-logo-b.png" style="width:5vh;min-width:35px; height:auto;"></a></div>
+            <div id="bg1">
+                <div id="title"><h1 class="fw6 f-5-l f4-m f4-ns ttu">The EPA Under Siege</h1></div>
+                <div id="subtitle"><h2 class="f3 fw3 ttu">Trump’s Assault in History and Testimony</h2></div>
+
+            </div>
+            <div class="intro tc pv4-ns">
+                <p class="f5-l f7-m f7-ns fw1 lh-copy">Christopher Sellers, Lindsey Dillon, Jennifer Liss Ohayon, Nick Shapiro, Marianne Sullivan, Chris Amoss, Stephen Bocking, Phil Brown, Vanessa De la Rosa, Jill Harrison, Sara Johns, Katherine Kulik, Rebecca Lave, Michelle Murphy, Liza Piper, Lauren Richter, Sara Wylie</p>
+            </div>
+            <div id="down"></div>
+        </div>
     </header>
 
-    <div class="mb4 dib ">
-
-        <div class="vh-75 w-100 dt tc tile">
-            <a href="/index.html" title="Home"><img id="top-logo" class="ph3" src="assets/edgi-logo-b.png"></a>
-            <div class="tile-content" style="background:url(assets/ch1-cover.jpg); hspace:0px;">
-                <h3 class="f4 fw1 ttu white-80">Part 1</h3>
-          			<h1 class="fw6 f-5-l f1-m f1-ns ttu white">The EPA Under Siege</h1>
-          			<h2 class="f3 fw3 ttu white-80">Trump’s Assault in History and Testimony</h2>
-            </div>
-		    </div>
-        <div id="contr" class="vh-25 w-100 dt tc tile pv0-l pv2-m pv4-ns">
-            <div class="tile-content">
-                <h3 class="f3 ttu white">Contributors</h3>
-                <p class="f4 fw2 white lh-normal">Christopher Sellers, Lindsey Dillon, Jennifer Liss Ohayon, Nick Shapiro, Marianne Sullivan, Chris Amoss, Stephen Bocking, Phil Brown, Vanessa De la Rosa, Jill Harrison, Sara Johns, Katherine Kulik, Rebecca Lave, Michelle Murphy, Liza Piper, Lauren Richter, Sara Wylie</p>
-            </div>
-    		</div>
-    </div>
     <div id="aside" class="pv5 mh6 dn-ns dn-m dib-l">
-        <div class="tile-content ">
+        <div class="aside">
             <a href="https://envirodatagov.org/wp-content/uploads/2017/06/Part-1-EPA-Under-Siege.pdf" class="aside-el">
                 <img alt="pdf" src="assets/pdf.png" style="width:40px; margin-bottom:10px">
                 <h3 class="f5 fw1 ttu">Download PDF</h3>
@@ -74,7 +66,7 @@ author: "Christopher Sellers, Lindsey Dillon, Jennifer Liss Ohayon, Nick Shapiro
 
 
     <!--MAIN ARTICLE-->
-	<div class="article center measure-wide f5 pt5 lh-copy ph2">
+	<main class="article center measure-wide f5 lh-copy ph2">
 		<p>The Environmental Data &amp; Governance Initiative (EDGI) is an organization comprised of academics and non-profit employees that promotes open and accessible government data and information along with evidence-based policy making.</p>
 		<p>The EPA Under Siege is the first part of a multipart series on the early days of the Trump administration. In this series, EDGI authors systematically investigate historical precedents for Trump&rsquo;s attack on the EPA, consequences
 			for toxic regulation and environmental justice, the influence of the fossil fuel industry on the new administration, changes to the public presentation of climate change, and the new administration&rsquo;s hostility to scientific research and evidence.</p>
@@ -83,7 +75,7 @@ author: "Christopher Sellers, Lindsey Dillon, Jennifer Liss Ohayon, Nick Shapiro
 			<li><a href="#h.ufdv5h53z13d">Executive Summary</a></li>
 			<li><a href="#h.6al5to2e945l">Introduction</a></li>
 			<li><a href="#h.lbkhmc53aeqy">Precedent #1: The Early-Reagan Attack on the Environmental State</a></li>
-			<li><a href="#h.x9ekbzb6obez">What Ended the Gorsuch Era</a></li>
+			<li><a href="#h.x9ekbzb6obez">What Ended the Gorsuch Era</a></>
 			<li><a href="#h.m4le6e3ngvsw">Precedent #2: The Harper Administration in Canada</a></li>
 			<li><a href="#h.n1xfpaqls8el">Just Before Trump: An Agency Already in Decline?</a></li>
 			<li><a href="#h.60t5fhwl4o5i">The Trump Administration Compared</a></li>
@@ -639,7 +631,7 @@ author: "Christopher Sellers, Lindsey Dillon, Jennifer Liss Ohayon, Nick Shapiro
         <p>Just what would America be like without the EPA?  So that this country doesn&rsquo;t have to learn again, the hard way, Americans may all need a crash course in all the EPA has done for them over the past half-century. That so many daily lives now seem so little troubled by environmental worries reflects the long-building and continuing accomplishments of this agency, its employees, and its work. Without it, or with the EPA reduced to a fragment of its former self, this nation&rsquo;s environmental troubles are bound to worsen. For this agency to remain robust enough truly to protect Americans&rsquo; environment and health, these lessons need much wider disseminating.<br></p>
         <p>The current assault on the EPA raises another intriguing possibility, of a civic response that also exceeds the bounds of its historical parallels. The cause is certainly compelling: defending an agency that supports the science and enforces the laws on which our own environments and health depend&mdash;not to mention those of our children.</p>
         <p>Will tomorrow&rsquo;s regulators, scientists, and citizens remember today&rsquo;s assault on the EPA as temporary and passing?  Or will they see it as the start of a harsh new era of hands-off government, exacerbating the mounting environmental vulnerabilities that so many Americans face?  The answer lies not just with the EPA, the new administration, Congress, or the courts, but with all of us.</p>
-    </div>
+    </main>
 
     <!--APPENDIX-->
 
@@ -649,7 +641,7 @@ author: "Christopher Sellers, Lindsey Dillon, Jennifer Liss Ohayon, Nick Shapiro
       });
     </script>
 
-            <div class="back-to-top-2 dib mh3 dn-ns dn-m dib-l">
+            <div class="back-to-top-2 dib mh3 dn-ns dn-m dib-l" style="width: 100px;top: 250px">
                 <div class="dib">
                     <a href="#themes" class="dib tc">
                         <img alt="top" src="assets/top.png" style="width:40px; margin-bottom:10px">

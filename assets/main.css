@@ -346,17 +346,24 @@ small{
         min-height: 800px;
     }
     #bg {
-
-        margin-top: 60px;
-        top: 0;
+        min-height: 600px;
+        margin-top: 100px;
+        top: 2vh;
         flex: 0;
     }
     .chbg{
         min-height: 100%;
     }
+    #intro {
+        top: -200px;
+    }
+    #down {
+        top: -100px;
+
+    }
 
 }
-@media only screen and (min-width : 320px) and (max-height:800px){
+@media only screen and (min-width : 320px) and (max-width:1000px) and (max-height:800px){
     header, section, #h_wrapper{
         min-height: 800px;
     }
@@ -502,14 +509,12 @@ small{
         background-position: center;
     }
     #title {
-        ;
         left: 0;
     }
     #title > h1 {
         font-size: 2.6em;
     }
     #subtitle {
-        ;
         left: 15vw;
     }
     #subtitle > h1 {
@@ -544,14 +549,12 @@ small{
         background-position: center;
     }
     #title {
-        ;
         left: 0;
     }
     #title > h1 {
         font-size: 2.6em;
     }
     #subtitle {
-        ;
         left: 15vw;
     }
     #subtitle > h1 {

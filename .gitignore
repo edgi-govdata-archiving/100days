@@ -2,3 +2,6 @@
 _site/
 .sass-cache/
 .jekyll-metadata
+
+# Deployment
+100days.tar.gz

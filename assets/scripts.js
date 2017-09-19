@@ -19,8 +19,8 @@ $(".back-to-article").sticky({topSpacing:100, wrapperClassName:"back-to-article-
 });
 
 //spill map
-function initialize() {
-    var mapProp = {
+function initialize_s() {
+    var mapProp1 = {
         center: {
             lat: 37.5125744,
             lng: -100.8919434
@@ -181,17 +181,16 @@ function initialize() {
             }
         ]
     }
-    var map = new google.maps.Map(document.getElementById("spillMap"), mapProp);
-
-    var layer = new google.maps.FusionTablesLayer({
+    var map1 = new google.maps.Map(document.getElementById("spillMap"), mapProp1);
+    var layer1 = new google.maps.FusionTablesLayer({
         query: {
           select: 'geometry',
           from: '1uGungBXSFBd7GCEpgMhdNypD2fHrprwuEPBlzdqQ'
         }
       });
-      layer.setMap(map);
+      layer1.setMap(map1);
 
-    google.maps.event.addListener(layer, 'click', function(e) {
+    google.maps.event.addListener(layer1, 'click', function(e) {
 
     // Change the content of the InfoWindow
     e.infoWindowHtml = "<b>City:</b> " + e.row['ACCITY'].value + "<br>"
@@ -201,7 +200,7 @@ function initialize() {
     + "<b>Commodity spilled:</b> " + e.row['COMM'].value;
     });
 }
-google.maps.event.addDomListener(window, 'load', initialize);
+google.maps.event.addDomListener(window, 'load', initialize_s);
 
 
 //pesticide map

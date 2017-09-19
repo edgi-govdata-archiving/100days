@@ -46,24 +46,25 @@ ul, ol, dl, figure, hr,
 
 
 
-.tile {
-  position: relative;
-  margin-left: 0;
-  margin-right: 0;
-  display: table;
+#wrapper1 {
+    width: 100vw;
+    height: 100vh;
+    position: relative;
+    display: -webkit-flex;
+    display: flex;
+    overflow: hidden;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-bottom: 3vh;
 }
-.tile-content {
-  height: inherit;
-  width: inherit;
-  display: table-cell;
-  vertical-align: middle;
-  text-align: center;
-  padding-left: 10%;
-  padding-right: 10%;
-}
-#title {
-  float: right;
-  background-color:#4FBBA9;
+#h_wrapper {
+    display: flex;
+    position: relative;
+    box-sizing: border-box;
+    flex-direction: column;
+    justify-content: space-around;
+    align-content: space-around;
+    height: 100vh;
 }
 
 #contr {
@@ -164,7 +165,9 @@ h1, h2, h3, h4, h5, h6, cite {
  */
 a {
   color: #4FBBA9;
-  text-decoration: none;
+  box-sizing: content-box;
+  /*color: black;*/
+  /*text-decoration: underline;*/
 }
 a:hover {
   color: #111;
@@ -253,11 +256,12 @@ pre > code {
  * Site header
  */
 
-#top-logo {
-    width: auto;
-    height: 50px;
+#logo {
+
     position: absolute;
-    margin-top: 10px;
+    left: 1em;
+    top: 1em;
+
     z-index: 1;
 }
 #nav-txt {
@@ -273,17 +277,436 @@ pre > code {
     display: inline;
 }
 
-header {
+#nav {
   top:100%;
   height:40px;
   position:fixed;
   background-color: #ffffff;
-  border-bottom: #d2d2d2 1px solid;
+  border-bottom: white 1px solid;
   display: inline-block;
+  z-index: 3;
 }
-.header-wrapper {
+.nav-wrapper {
   position: absolute;
   top: 100%;
   width: 100%;
   display: block;
+  z-index: 3;
 }
+
+#nav > a {
+    text-decoration: none;
+}
+
+ol {
+    counter-reset: item;
+}
+
+ol > h3 > li {
+    counter-increment: item;
+    list-style-type: upper-roman;
+    font-size: 1em;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-family: "Open Sans Condensed", sans-serif;
+}
+
+ol ol > li {
+    list-style-type: lower-alpha;
+}
+ol ol ol > li {
+    list-style-type: lower-roman;
+}
+
+.li {
+    text-align: left;
+    padding: 0;
+    margin: 0;
+}
+
+.aside {
+    vertical-align: middle;
+    text-align: center;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+header {
+    margin-bottom: 10vh;
+}
+#wrapper2{
+    width: 100vw;
+    min-height: 800px;
+    max-height: 900px;
+    height: 100vh;
+    position: relative;
+    overflow: hidden;
+    display: flex !important;
+    display: -webkit-flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-content: center;
+    flex-wrap: nowrap;
+}
+#bg1 {
+    box-sizing: content-box;
+    position: relative;
+    display: inline;
+    margin: 0 auto;
+    height: 80vh;
+    min-height: 400px;
+    width: 90vw;
+    background: url("/assets/ch1-cover.jpg");
+    background-size: cover;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    top: 10vh;
+}
+#bg2 {
+    background: url("/assets/partII-cover-image.jpg");
+    background-position: bottom;
+    background-size: cover;
+    position: relative;
+    height: 110vh;
+    width: 50vw;
+    min-height: 500px;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    margin: 0;
+}
+.chbg {
+    position: relative;
+    height: 110vh;
+    width: 50vw;
+    min-height: 500px;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    margin: 0;
+}
+#bg2a {
+    box-sizing: content-box;
+    position: relative;
+    display: inline;
+    margin: 0 auto;
+    height: 100vh;
+    min-height: 400px;
+    width: 90vw;
+    background: url("/assets/mustafa.jpg");
+    background-size: cover;
+    background-position: top;
+    background-repeat: no-repeat;
+    top: 10vh;
+}
+
+#title {
+    display: block;
+    position: relative;
+    top: 5vh;
+    left: 2vw;
+    box-sizing: border-box;
+}
+#title > h1 {
+    display: inline;
+    background-color: white;
+    padding: 0 0.2em 0 0.2em;
+    box-sizing: border-box;
+    margin: 0;
+}
+
+#subtitle {
+    display: inline;
+    position: relative;
+    top: 5vh;
+    left: 15vw;
+    box-sizing: content-box;
+    flex: 2;
+    height:0;
+}
+#subtitle > h2 {
+    display: inline;
+    background-color: white;
+    margin: 0;
+    padding: 0 0.3em 0 0.3em;
+    box-sizing: border-box;
+}
+.intro {
+  display: inline;
+  position: relative;
+  top: -15vh;
+  margin: auto;
+  box-sizing: border-box;
+  background-color: white;
+  width: 66vw;
+  padding:1em;
+  z-index: 4;
+}
+.intro > p {
+    display: block;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.1em;
+    line-height: 1.4em;
+}
+#intro2a {
+  display: inline;
+  position: relative;
+  top: -57vh;
+  box-sizing: border-box;
+  width: 16vw;
+  left: 10vw;
+}
+#intro2a > p {
+    display: block;
+    background-color: white;
+    margin: 0;
+    padding: 0.5em;
+    box-sizing: border-box;
+    font-size: 1.1em;
+    line-height: 1.4em;
+}
+#intro_pr {
+  display: inline;
+  position: relative;
+  top: -15vh;
+  margin: auto;
+  box-sizing: border-box;
+  width: 25vw;
+}
+#intro_pr > p {
+    display: block;
+    background-color: white;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-size: 1.1em;
+    line-height: 1.4em;
+}
+#down {
+    background: url("/assets/down.svg");
+    box-sizing: border-box;
+    position: relative;
+    margin: auto;
+    height: 2em;
+    width: 3em;
+    display: block;
+    z-index: 5;
+    background-size: contain;
+    background-repeat: no-repeat;
+    bottom: 2vh;
+}
+p > mark {
+    background-color: #fbede2;
+}
+#ar_btm_img {
+    display: flex;
+    max-width: 70vw;
+    margin: auto;
+}
+#ar_btm_txt {
+    display: flex;
+    max-width: 70vw;
+    margin: auto;
+}
+#abl_img{
+    box-sizing: border-box;
+    position: relative;
+    margin: 1em;
+    margin-bottom: 0.5em;
+    height: 18vw;
+    width: 30vw;
+    background: url("/assets/ch1-cover.jpg");
+    background-size: cover;
+}
+#abr_img{
+    box-sizing: border-box;
+    position: relative;
+    margin: 1em;
+    margin-bottom: 0.5em;
+    height: 18vw;
+    width: 30vw;
+    background: url("/assets/ali.jpg");
+    background-size: cover;
+}
+#abl_txt, #abr_txt {
+    box-sizing: border-box;
+    position: relative;
+    width: 30vw;
+    text-align: center;
+    margin: 2em;
+    margin-top: 0;
+}
+
+#spillMap, #pesticideMap {
+    width:70vw;
+    height:70vh;
+    position: relative;
+    margin-left: 50%;
+    transform: translateX(-50%);
+    z-index:1
+}
+
+
+/*CHLORPYRIFOS MAP LEGEND*/
+#legend {
+    background: #FFF;
+    padding: 0 10px;
+    margin: 5px;
+    width: 110px;
+    font-size: 12px;
+    font-family: Arial, sans-serif;
+  }
+
+  .color {
+    border: 1px solid;
+    height: 18px;
+    width: 18px;
+    margin-right: 3px;
+    float: left;
+    opacity: 0.7;
+  }
+  .r {
+    background: #e3e3e3;
+  }
+  .r1 {
+    background: #fcbca2;
+  }
+
+  .r2 {
+    background: #fb6a4a;
+  }
+
+  .r3 {
+    background: #ef3b2c;
+  }
+
+  .r4 {
+    background: #cb181d;
+  }
+
+  .r5 {
+    background: #a50f15;
+  }
+  .part {
+      display: inline;
+      position: relative;
+      box-sizing: content-box;
+
+  }
+  .part > h2 {
+      margin: 0;
+      display: inline;
+      position: relative;
+      background-color: white;
+      box-sizing: content-box;
+  }
+  #wrapper2 {
+      flex-direction: row;
+      flex-wrap: nowrap;
+      display: flex;
+  }
+
+  #p2-inner-wrapper {
+      display: flex;
+      position: relative;
+      box-sizing: border-box;
+      flex-direction: column;
+      justify-content: flex-start;
+      align-content: flex-start;
+      min-height: 600px;
+      height: 90vh;
+      width: 50vw;
+      padding: 2em;
+      padding-left: 4em;
+      padding-right: 4em;
+  }
+  #p2-inner-wrapper > h1 {
+      padding: 0;
+      padding-bottom: 0.2em;
+      margin: 0;
+      line-height: 1.2em;
+      font-size: 6em;
+  }
+  #contrib {
+      padding: 0;
+      margin: 0;
+      margin-top: 30vh;
+      display: block;
+      box-sizing: content-box;
+  }
+  figcaption.wide-fig {
+      max-width: 100vw;
+      word-wrap:break-word;
+  }
+  .wide-fig {
+      width: 60vw;
+      position: relative;
+      margin-left: 50%;
+      transform: translateX(-50%);
+      z-index:1
+  }
+
+
+  @media only screen and (min-width : 320px) and (max-width : 1000px) {
+      #bg2 {
+          position: relative;
+          min-height: 300px;
+          height: 50vh;
+          width: 100vw;
+          background-repeat: no-repeat;
+          box-sizing: border-box;
+          margin: 0;
+          flex: initial;
+          order: 1;
+      }
+      #wrapper2 {
+          flex-direction: column;
+          justify-content: flex-start;
+          align-items: center;
+          flex-wrap: nowrap;
+      }
+      #p2-inner-wrapper {
+          justify-content:flex-start;
+          width: 90vw;
+          min-height: 0;
+          padding: 0;
+          left: 0;
+          height: 50vh;
+          flex: 3;
+          order: 2;
+      }
+      #p2-inner-wrapper > h1 {
+          font-size: 3em;
+          flex: initial;
+          order: 1;
+      }
+      #p2-inner-wrapper > h2 {
+          flex: auto;
+          order: 2;
+      }
+      .part {
+          bottom: 60vh;
+      }
+      .part > h2 {
+          padding: 0 0.5em;
+      }
+      #contrib {
+          padding: 0;
+          margin: 0;
+          margin-top: 0vh;
+          margin-bottom: 5vh;
+          font-size: 1em;
+          flex: 0;
+          order: 3;
+          align-self: flex-end;
+      }
+      #spillMap, #pesticideMap {
+          width: 100vw;
+      }
+      .wide-fig {
+          width: 90vw;
+          position: relative;
+          margin-left: 50%;
+          transform: translateX(-50%);
+          z-index:1
+      }
+  }

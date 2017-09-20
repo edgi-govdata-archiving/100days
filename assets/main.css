@@ -46,8 +46,8 @@ img {
 h1, h2, h3, h4, h5, h6 {
 	font: 700 16px/1.5 'Open Sans Condensed', sans-serif;
  	color: #393939;
-    text-align: center;
-    padding: 0;
+  text-align: center;
+  padding: 0;
 }
 
 /**
@@ -57,123 +57,123 @@ a {
   color: #393939;
   text-decoration: none;
 }
-  a:hover {
-    color: #696969;
-    text-decoration: underline;
-  }
-  .dark{
-    color: white;
-    text-decoration: none;
-  }
-  a.dark:hover {
-    color: white;
-    text-decoration: underline;
-  }
-
-
-#buttons {
-    flex: 0;
-    order: 3;
-    align-items: flex-end;
-    margin-bottom: 3vh;
+a:hover {
+  color: #696969;
+  text-decoration: underline;
 }
+.dark{
+  color: white;
+  text-decoration: none;
+}
+a.dark:hover {
+  color: white;
+  text-decoration: underline;
+}
+#buttons {
+  flex: 0;
+  order: 3;
+  align-items: flex-end;
+  margin-bottom: 3vh;
+}
+
+/**
+ * Header
+ */
 header {
-    width: 100vw;
-    height: auto;
-    margin-bottom: 5vh;
-    position: relative;
-    display: -webkit-flex;
-    display: flex;
-    overflow: hidden;
-    flex-direction: column;
-    justify-content: space-between;
+  width: 100vw;
+  height: auto;
+  margin-bottom: 5vh;
+  position: relative;
+  display: -webkit-flex;
+  display: flex;
+  overflow: hidden;
+  flex-direction: column;
+  justify-content: space-between;
 }
 section {
-    width: 100vw;
-    min-height: 800px;
-    max-height: 900px;
-    height: 100vh;
-    margin-bottom: 10vh;
-    position: relative;
-    overflow: hidden;
-    display: flex !important;
-    display: -webkit-flex;
-    flex-direction: row;
-    justify-content: space-around;
-    align-content: center;
-    flex-wrap: nowrap;
+  width: 100vw;
+  min-height: 800px;
+  max-height: 900px;
+  height: 100vh;
+  margin-bottom: 10vh;
+  position: relative;
+  overflow: hidden;
+  display: flex !important;
+  display: -webkit-flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  flex-wrap: nowrap;
 }
 #h_wrapper {
-    display: flex;
-    position: relative;
-    box-sizing: border-box;
-    flex-direction: column;
-    justify-content: space-around;
-    align-content: space-around;
-    height: 100vh;
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: space-around;
+  align-content: space-around;
+  height: 100vh;
 }
 .inner_wrapper {
-    display: flex;
-    position: relative;
-    box-sizing: border-box;
-    flex-direction: column;
-    justify-content: flex-start;
-    align-content: flex-start;
-    min-height: 600px;
-    height: 90vh;
-    width: 50vw;
-    left: 3vw;
+  display: flex;
+  position: relative;
+  box-sizing: border-box;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-content: flex-start;
+  min-height: 600px;
+  height: 90vh;
+  width: 50vw;
+  left: 3vw;
 }
 #bg {
-    box-sizing: content-box;
-    position: relative;
-    display: inline;
-    margin: 0 auto;
-    height: 80vh;
-    min-height: 400px;
-    width: 90vw;
-    background: url("/assets/flag-joe-raedle.jpg");
-    background-size: cover;
-    background-position: top;
-    background-repeat: no-repeat;
-    top: 10vh
+  box-sizing: content-box;
+  position: relative;
+  display: inline;
+  margin: 0 auto;
+  height: 80vh;
+  min-height: 400px;
+  width: 90vw;
+  background: url("/assets/flag-joe-raedle.jpg");
+  background-size: cover;
+  background-position: top;
+  background-repeat: no-repeat;
+  top: 10vh
 }
-
 #logo {
-    position: absolute;
-    left: 1em;
-    top: 1em;
+  position: absolute;
+  left: 1em;
+  top: 1em;
 }
 #title {
-    display: block;
-    position: relative;
-    top: 5vh;
-    left: 2vw;
-    box-sizing: border-box;
+  display: block;
+  position: relative;
+  top: 5vh;
+  left: 2vw;
+  box-sizing: border-box;
 }
 #title > h1 {
-    display: inline;
-    background-color: white;
-    padding: 0 0.2em 0 0.2em;
-    box-sizing: border-box;
-    margin: 0;
+  display: inline;
+  background-color: white;
+  padding: 0 0.2em 0 0.2em;
+  box-sizing: border-box;
+  margin: 0;
 }
-
 #subtitle {
-    display: block;
-    position: relative;
-    top: 5vh;
-    left: 20vw;
-    box-sizing: border-box;
-    flex: 2;
+  display: block;
+  position: relative;
+  top: 5vh;
+  left: 20vw;
+  box-sizing: border-box;
+  flex: 2;
 }
 #subtitle > h1 {
-    display: inline;
-    background-color: white;
-    margin: 0;
-    padding: 0 0.3em 0 0.3em;
-    box-sizing: border-box;
-    font-size: 2.5em;
+  display: inline;
+  background-color: white;
+  margin: 0;
+  padding: 0 0.3em 0 0.3em;
+  box-sizing: border-box;
+  font-size: 2.5em;
 }
 #intro {
   display: inline;
@@ -186,474 +186,469 @@ section {
   padding:1em;
 }
 #intro > p {
-    display: block;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-size: 1.1em;
-    line-height: 1.4em;
+  display: block;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-size: 1.1em;
+  line-height: 1.4em;
 }
 #down {
-    background: url("/assets/down.svg");
-    box-sizing: border-box;
-    position: relative;
-    margin: auto;
-    height: 2em;
-    width: 3em;
-    display: block;
-    z-index: 5;
-    background-size: contain;
-    background-repeat: no-repeat;
-    bottom: 3vh;
+  background: url("/assets/down.svg");
+  box-sizing: border-box;
+  position: relative;
+  margin: auto;
+  height: 2em;
+  width: 3em;
+  display: block;
+  z-index: 5;
+  background-size: contain;
+  background-repeat: no-repeat;
+  bottom: 3vh;
 }
-
 #ch1bg {
-    background: url("/assets/ch1-cover.jpg");
-    background-position: top;
-    background-size: cover;
+  background: url("/assets/ch1-cover.jpg");
+  background-position: top;
+  background-size: cover;
 }
 #ch2bg {
-    background: url("/assets/partII-cover-image.jpg");
-    background-position: bottom;
-    background-size: cover;
+  background: url("/assets/partII-cover-image.jpg");
+  background-position: bottom;
+  background-size: cover;
 }
 .chbg {
-    position: relative;
-    min-height: 400px;
-    height: 90vh;
-    width: 50vw;
-    background-repeat: no-repeat;
-    box-sizing: border-box;
-    margin: 0;
-    flex: 1;
+  position: relative;
+  min-height: 400px;
+  height: 90vh;
+  width: 50vw;
+  background-repeat: no-repeat;
+  box-sizing: border-box;
+  margin: 0;
+  flex: 1;
 }
 .part {
-    display: block;
-    position: relative;
-    margin-bottom: 2vh;
-    margin-top: 2vh;
-    box-sizing: border-box;
-    flex: initial;
-    order: 1;
+  display: block;
+  position: relative;
+  margin-bottom: 2vh;
+  margin-top: 2vh;
+  box-sizing: border-box;
+  flex: initial;
+  order: 1;
 }
 .part > h2 {
-    margin: 0;
-    display: inline;
-    position: relative;
-    background-color: white;
-    box-sizing: border-box;
+  margin: 0;
+  display: inline;
+  position: relative;
+  background-color: white;
+  box-sizing: border-box;
 }
-
 .ch_titles {
-    display: table-cell;
-    position: relative;
-    text-align: left;
-    width: 45vw;
-    margin-bottom: 10vh;
-    flex: 4;
-    order: 2;
+  display: table-cell;
+  position: relative;
+  text-align: left;
+  width: 45vw;
+  margin-bottom: 10vh;
+  flex: 4;
+  order: 2;
 }
 .ch_titles h1,h3 {
-    padding: 0;
-    margin: 0;
-    margin-bottom: 2vh;
-    line-height: 1.2em;
+  padding: 0;
+  margin: 0;
+  margin-bottom: 2vh;
+  line-height: 1.2em;
 }
 
 /*div.read_ch {
-    position: relative;
-    border: 1px solid black;
-    display: block;
-    padding: 1em;
-    width: 40vw;
-    text-align: center;
-    display: flex;
-    flex-direction: row;
-    align-items: center;
+  position: relative;
+  border: 1px solid black;
+  display: block;
+  padding: 1em;
+  width: 40vw;
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
 }
 a.read_ch {
-    margin-bottom: 2vh;
-    width: 40vw;
+  margin-bottom: 2vh;
+  width: 40vw;
 }
 .read_ch > h2 {
-    display: inline;
-    flex: 1;
+  display: inline;
+  flex: 1;
 }*/
 a.readch-app {
-    width: 40vw;
+  width: 40vw;
 }
 div.readch-app {
-    position: relative;
-    width: 40vw;
-    display: block;
-    display: flex;
-    padding: 1em;
-    flex-direction: row;
-    align-items: center;
-    justify-content: space-between;
-    text-align: left;
-    min-height: 40px;
-    border: 1px solid black;
-    margin-bottom: 2vh;
+  align-items: center;
+  border: 1px solid black;
+  display: block;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  margin-bottom: 2vh;
+  min-height: 40px;
+  padding: 1em;
+  position: relative;
+  text-align: left;
+  width: 40vw;
 }
-
-.readch-app h2,h3 {
-    padding: 0;
-    margin: 0;
-    display: block;
+.readch-app h2, h3 {
+  display: block;
+  margin: 0;
+  padding: 0;
 }
 #right {
-    background:url("/assets/right.svg");
-    height: 40px;
-    width: 32px;
-    background-size:cover;
-    position: relative;
-    display: block;
-    top: -50vh;
-    left: 90vw;
-    z-index: 4;
+  background: url("/assets/right.svg");
+  height: 40px;
+  width: 32px;
+  background-size:cover;
+  position: relative;
+  display: block;
+  top: -50vh;
+  left: 90vw;
+  z-index: 4;
 }
 #righta {
-    background:url("/assets/right.svg");
-    height: 1.5em;
-    width: 1em;
-    background-size:contain;
-    background-repeat: no-repeat;
-    background-position: center;
+  background: url("/assets/right.svg");
+  height: 1.5em;
+  width: 1em;
+  background-size:contain;
+  background-repeat: no-repeat;
+  background-position: center;
 }
 #right2b {
-    background:url("/assets/right.svg");
-    height: 40px;
-    width: 32px;
-    background-size:cover;
-    position: relative;
-    display: block;
-    top: -51vh;
-    left: 90vw;
-    z-index: 4;
+  background: url("/assets/right.svg");
+  height: 40px;
+  width: 32px;
+  background-size:cover;
+  position: relative;
+  display: block;
+  top: -51vh;
+  left: 90vw;
+  z-index: 4;
 }
 footer {
-    position: relative;
-    bottom: 0%;
-    margin-top: 8vh;
-    padding: 0.5em;
+  bottom: 0;
+  margin-top: 8vh;
+  padding: 0.5em;
+  position: relative;
 }
 small{
-    width: 90vw;
+  width: 90vw;
 }
+
+/**
+ * Media for different screen sizes
+ */
 @media only screen and (min-width : 1000px) and (max-height:800px){
-    header, section, .inner_wrapper, #h_wrapper{
-        min-height: 800px;
-    }
-    #bg {
-        min-height: 600px;
-        margin-top: 100px;
-        top: 2vh;
-        flex: 0;
-    }
-    .chbg{
-        min-height: 100%;
-    }
-    #intro {
-        top: -200px;
-    }
-    #down {
-        top: -100px;
-
-    }
-
+  header, section, .inner_wrapper, #h_wrapper{
+    min-height: 800px;
+  }
+  #bg {
+    min-height: 600px;
+    margin-top: 100px;
+    top: 2vh;
+    flex: 0;
+  }
+  .chbg{
+    min-height: 100%;
+  }
+  #intro {
+    top: -200px;
+  }
+  #down {
+    top: -100px;
+  }
 }
+
 @media only screen and (min-width : 320px) and (max-width:1000px) and (max-height:800px){
-    header, section, #h_wrapper{
-        min-height: 800px;
-    }
-    #bg {
-
-        margin-top: 60px;
-        top: 0;
-        flex: 0;
-    }
-    .chbg{
-        min-height: 400px;
-    }
-
+  header, section, #h_wrapper{
+    min-height: 800px;
+  }
+  #bg {
+    margin-top: 60px;
+    top: 0;
+    flex: 0;
+  }
+  .chbg{
+    min-height: 400px;
+  }
 }
+
 @media only screen and (min-width : 320px) and (max-width : 480px) and (max-height:800px){
-    footer {
-        margin-top: 3vh;
-    }
-    #bg {
-        min-height: 450px;
-        height: 60vh;
-        max-height: 400px;
-        width: 100vw;
-        top: 0;
-        margin-top: 0;
-        margin-bottom: 0;
-        flex: 0;
-        z-index: 1;
-    }
-    #logo {
-        z-index: 2;
-    }
-    #title {
-        top: 355px;
-        left: 0;
-        text-align: center;
-        background-color: white;
-    }
-    #title > h1 {
-        font-size: 2.3em;
-    }
-    #subtitle {
-        top: 355px;
-        left: 0vw;
-        text-align: center;
-        background-color: white;
-    }
-    #subtitle > h1 {
-        font-size: 1.8em;
-    }
-    #intro {
-        width: 90vw;
-        margin: auto;
-        z-index: 5;
-        top: 0vh;
-    }
-    #intro > p{
-        font-size: 1em;
-    }
-    #down {
-        visibility: collapse;
-    }
-    header {
-        height: auto;
-    }
-    .chbg {
-        position: relative;
-        height: 50vh;
-        min-height: 300px;
-        width: 100vw;
-        background-repeat: no-repeat;
-        box-sizing: border-box;
-        margin: 0;
-    }
-    .inner_wrapper {
-        justify-content:flex-start;
-        width: 90vw;
-        min-height: 400px;
-        padding: 0;
-        left: 0;
-        height: 50vh;
-    }
-    section {
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        flex-wrap: nowrap;
-        display: flex;
-        margin-top: 3vh;
-        margin-bottom: 4vh;
-        min-height: 700px;
-        max-height: 900px;
-        height: auto;
-    }
-    .part {
-        bottom: 350px;
-        left: -5vw;
-    }
-    .part > h2 {
-        padding: 0 0.5em;
-    }
-    .ch_titles a h1 {
-        font-size: 2.2em;
-        margin: 0;
-        padding: 0;
-    }
-    .ch_titles {
-        padding: 1em;
-        top: -5vh;
-        margin: 0;
-        margin-bottom: 3vh;
-        flex: 1;
-    }
-    #buttons {
-        flex: 4;
-    }
-
-    div.readch-app {
-        width: 90vw;
-        min-height: 50px;
-        height: 5vh;
-        margin: 0;
-        padding: 1em;
-        margin-bottom: 1vh;
-    }
-    .ra1 > h2 {
-        font-size: 1em;
-    }
-    .ra1 > h3 {
-        visibility: hidden;
-        display: none;
-    }
+  footer {
+    margin-top: 3vh;
+  }
+  #bg {
+    min-height: 450px;
+    height: 60vh;
+    max-height: 400px;
+    width: 100vw;
+    top: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+    flex: 0;
+    z-index: 1;
+  }
+  #logo {
+    z-index: 2;
+  }
+  #title {
+    top: 355px;
+    left: 0;
+    text-align: center;
+    background-color: white;
+  }
+  #title > h1 {
+    font-size: 2.3em;
+  }
+  #subtitle {
+    top: 355px;
+    left: 0vw;
+    text-align: center;
+    background-color: white;
+  }
+  #subtitle > h1 {
+    font-size: 1.8em;
+  }
+  #intro {
+    width: 90vw;
+    margin: auto;
+    z-index: 5;
+    top: 0vh;
+  }
+  #intro > p{
+    font-size: 1em;
+  }
+  #down {
+    visibility: collapse;
+  }
+  header {
+    height: auto;
+  }
+  .chbg {
+    position: relative;
+    height: 50vh;
+    min-height: 300px;
+    width: 100vw;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  .inner_wrapper {
+    justify-content:flex-start;
+    width: 90vw;
+    min-height: 400px;
+    padding: 0;
+    left: 0;
+    height: 50vh;
+  }
+  section {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    display: flex;
+    margin-top: 3vh;
+    margin-bottom: 4vh;
+    min-height: 700px;
+    max-height: 900px;
+    height: auto;
+  }
+  .part {
+    bottom: 350px;
+    left: -5vw;
+  }
+  .part > h2 {
+    padding: 0 0.5em;
+  }
+  .ch_titles a h1 {
+    font-size: 2.2em;
+    margin: 0;
+    padding: 0;
+  }
+  .ch_titles {
+    padding: 1em;
+    top: -5vh;
+    margin: 0;
+    margin-bottom: 3vh;
+    flex: 1;
+  }
+  #buttons {
+    flex: 4;
+  }
+  div.readch-app {
+    width: 90vw;
+    min-height: 50px;
+    height: 5vh;
+    margin: 0;
+    padding: 1em;
+    margin-bottom: 1vh;
+  }
+  .ra1 > h2 {
+    font-size: 1em;
+  }
+  .ra1 > h3 {
+    visibility: hidden;
+    display: none;
+  }
 }
+
 @media only screen and (min-width : 480px) and (max-width : 825px){
-    footer {
-        margin-top: 3vh;
-    }
-    #bg {
-        max-height: 400px;
-        height: 50vh;
-        max-width: 90vw;
-        margin-bottom: 0;
-        background-position: center;
-    }
-    #title {
-        left: 0;
-    }
-    #title > h1 {
-        font-size: 2.6em;
-    }
-    #subtitle {
-        left: 15vw;
-    }
-    #subtitle > h1 {
-        font-size: 1.8em;
-    }
-    #intro {
-        width: 90vw;
-        margin: auto;
-        top: 0vh;
-    }
-    #intro > p{
-        font-size: 1em;
-    }
-    #down {
-        width: 2em;
-        height: 1.5em;
-        margin: auto;
-        top: 0vh;
-
-    }
-
-    #h_wrapper {
-        height: 100vh;
-        justify-content:space-around;
-    }
+  footer {
+    margin-top: 3vh;
+  }
+  #bg {
+    max-height: 400px;
+    height: 50vh;
+    max-width: 90vw;
+    margin-bottom: 0;
+    background-position: center;
+  }
+  #title {
+    left: 0;
+  }
+  #title > h1 {
+    font-size: 2.6em;
+  }
+  #subtitle {
+    left: 15vw;
+  }
+  #subtitle > h1 {
+    font-size: 1.8em;
+  }
+  #intro {
+    width: 90vw;
+    margin: auto;
+    top: 0vh;
+  }
+  #intro > p{
+    font-size: 1em;
+  }
+  #down {
+    width: 2em;
+    height: 1.5em;
+    margin: auto;
+    top: 0vh;
+  }
+  #h_wrapper {
+    height: 100vh;
+    justify-content:space-around;
+  }
 }
+
 @media only screen and (min-width : 825px) and (max-width : 1024px){
-    #bg {
-        height: 70vh;
-        max-width: 90vw;
-        margin-bottom: 0;
-        background-position: center;
-    }
-    #title {
-        left: 0;
-    }
-    #title > h1 {
-        font-size: 2.6em;
-    }
-    #subtitle {
-        left: 15vw;
-    }
-    #subtitle > h1 {
-        font-size: 1.8em;
-    }
-    #intro {
-        width: 90vw;
-
-    }
-    #intro > p{
-        font-size: 1em;
-    }
-    #down {
-
-    }
-    div.readch-app{
-        height: 15vh;
-    }
+  #bg {
+    height: 70vh;
+    max-width: 90vw;
+    margin-bottom: 0;
+    background-position: center;
+  }
+  #title {
+    left: 0;
+  }
+  #title > h1 {
+    font-size: 2.6em;
+  }
+  #subtitle {
+    left: 15vw;
+  }
+  #subtitle > h1 {
+    font-size: 1.8em;
+  }
+  #intro {
+    width: 90vw;
+  }
+  #intro > p{
+    font-size: 1em;
+  }
+  #down {
+  }
+  div.readch-app{
+    height: 15vh;
+  }
 }
 @media only screen and (min-width : 1024px) and (max-width : 1225px){
-    #intro {
-        top: -15vh;
-    }
-    #intro > p{
-        font-size: 1em;
-    }
-    #down {
-        margin: auto;
-    }
-    section,header {
-        height: 100vh;
-    }
-    #h_wrapper {
-        height: 100%;
-    }
-    div.readch-app{
-        height: 15vh;
-    }
+  #intro {
+    top: -15vh;
+  }
+  #intro > p{
+    font-size: 1em;
+  }
+  #down {
+    margin: auto;
+  }
+  section,header {
+    height: 100vh;
+  }
+  #h_wrapper {
+    height: 100%;
+  }
+  div.readch-app{
+    height: 15vh;
+  }
 }
 
 @media only screen and (min-width : 480px) and (max-width : 1000px) {
-    .chbg {
-        position: relative;
-        min-height: 400px;
-        height: 50vh;
-        width: 100vw;
-        background-repeat: no-repeat;
-        box-sizing: border-box;
-        margin: 0;
-    }
-    .inner_wrapper {
-        justify-content:flex-start;
-        width: 90vw;
-        padding: 0;
-        left: 0;
-        height: 50vh;
-    }
-    section {
-        flex-direction: column;
-        justify-content: flex-start;
-        align-items: center;
-        flex-wrap: nowrap;
-        display: flex;
-        margin-top: 3vh;
-    }
-    .part {
-        bottom: 23em;
-        left: -5vw;
-    }
-    .part > h2 {
-        padding: 0 0.5em;
-    }
-    .ch_titles a h1 {
-        font-size: 2.2em;
-        margin: 0;
-        padding: 0;
-    }
-    .ch_titles {
-        padding: 0;
-        top: -5vh;
-        margin: 0;
-        flex: 1;
-    }
-    #buttons{
-        flex: 2;
-    }
-
-    div.readch-app {
-        width: 90vw;
-        min-height: 60px;
-        height: 8vh;
-        margin: 0;
-        padding: 1em;
-        margin-bottom: 1vh;
-    }
-    .ra1 > h2 {
-        font-size: 1em;
-    }
-    .ra1 > h3 {
-        font-size: 1em;
-    }
+  .chbg {
+    position: relative;
+    min-height: 400px;
+    height: 50vh;
+    width: 100vw;
+    background-repeat: no-repeat;
+    box-sizing: border-box;
+    margin: 0;
+  }
+  .inner_wrapper {
+    justify-content:flex-start;
+    width: 90vw;
+    padding: 0;
+    left: 0;
+    height: 50vh;
+  }
+  section {
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: center;
+    flex-wrap: nowrap;
+    display: flex;
+    margin-top: 3vh;
+  }
+  .part {
+    bottom: 23em;
+    left: -5vw;
+  }
+  .part > h2 {
+    padding: 0 0.5em;
+  }
+  .ch_titles a h1 {
+    font-size: 2.2em;
+    margin: 0;
+    padding: 0;
+  }
+  .ch_titles {
+    padding: 0;
+    top: -5vh;
+    margin: 0;
+    flex: 1;
+  }
+  #buttons{
+    flex: 2;
+  }
+  div.readch-app {
+    width: 90vw;
+    min-height: 60px;
+    height: 8vh;
+    margin: 0;
+    padding: 1em;
+    margin-bottom: 1vh;
+  }
+  .ra1 > h2 {
+    font-size: 1em;
+  }
+  .ra1 > h3 {
+    font-size: 1em;
+  }
 }

@@ -93,7 +93,6 @@ header {
 section {
   width: 100vw;
   min-height: 800px;
-  max-height: 900px;
   height: 100vh;
   margin-bottom: 10vh;
   position: relative;
@@ -122,7 +121,7 @@ section {
   justify-content: flex-start;
   align-content: flex-start;
   min-height: 600px;
-  height: 90vh;
+  height: 70vh;
   width: 50vw;
   left: 3vw;
 }
@@ -207,7 +206,7 @@ section {
   bottom: 3vh;
 }
 #ch1bg {
-  background: url("/assets/ch1-cover.jpg");
+  background: url("/assets/partI-cover-image.jpg");
   background-position: top;
   background-size: cover;
 }

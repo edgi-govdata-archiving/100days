@@ -93,7 +93,6 @@ header {
 section {
   width: 100vw;
   min-height: 800px;
-  max-height: 900px;
   height: 100vh;
   margin-bottom: 10vh;
   position: relative;

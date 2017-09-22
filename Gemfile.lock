@@ -33,6 +33,9 @@ GEM
     mercenary (0.3.6)
     minima (2.1.1)
       jekyll (~> 3.3)
+    net-sftp (2.1.2)
+      net-ssh (>= 2.6.5)
+    net-ssh (4.1.0)
     pathutil (0.14.0)
       forwardable-extended (~> 2.6)
     public_suffix (2.0.5)
@@ -58,6 +61,7 @@ DEPENDENCIES
   jekyll-feed (~> 0.6)
   jekyll-redirect-from
   minima (~> 2.0)
+  net-sftp
   puma
   rack-jekyll
   rake

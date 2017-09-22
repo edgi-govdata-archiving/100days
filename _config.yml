@@ -36,3 +36,6 @@ exclude:
   - Procfile
   - Rakefile
   - vendor
+  - scripts
+  - sample.env
+  - .env

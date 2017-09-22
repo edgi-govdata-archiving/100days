@@ -5,3 +5,4 @@ _site/
 
 # Deployment
 100days.tar.gz
+.env

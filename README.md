@@ -29,9 +29,11 @@ $ bundle exec jekyll serve
 
 Commits and merges into `master` will be deployed to the production server, current process is:
 
-1. Remove existing `_site` and archived versions `100days.tar.gz` in folder (both of these should not be under version control)
+### Manual
+
+1. Remove existing archive file `100days.tar.gz` in folder (this should not be under version control)
     ```bash
-    $ rm -rf _site/ 100days.tar.gz
+    $ rm -f 100days.tar.gz
     ```
 1. Build and archive site locally:
     ```bash
@@ -40,3 +42,15 @@ Commits and merges into `master` will be deployed to the production server, curr
     ```
 1. Upload tar archive to webroot via cPanel: `Files > File Manager > /100days.envirodatagov.org`
 1. Extract archive within interface. (This will overwrite existing files.)
+
+### Scripted
+
+1. Set the shell environment variables in [`sample.env`](sample.env)
+1. Build site locally:
+    ```bash
+    $ bundle exec jekyll build
+    ```
+1. Run the FTP upload script:
+    ```bash
+    $ bundle exec ruby scripts/ftp_upload.rb
+    ```

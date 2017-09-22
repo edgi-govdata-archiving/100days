@@ -33,3 +33,6 @@ gem 'rake'
 
 # Permalinks and Redirection
 gem 'jekyll-redirect-from'
+
+# FTP deploy
+gem 'net-sftp'

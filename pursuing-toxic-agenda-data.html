@@ -11,6 +11,7 @@ redirect_from:
     - '/pursuing-toxic-agenda-data.html'
 ---
 <body>
+    <!--HEADER-->
     <div><a id="logo" href="/index.html" title="Home" class=""><img alt="edgi-logo" src="/assets/edgi-logo-b.png" style="width:5vh;min-width:35px; height:auto;"></a></div>
     <header id="wrapper2">
         <div id="bg2" class="chbg"></div>
@@ -21,20 +22,16 @@ redirect_from:
               <p id="contrib"class="f5-l f7-m f7-ns fw1 lh-copy">{{ page.author }}</p>
         </div>
     </header>
+
+    <!--NAVIGATION-->
     <div id="nav" class="w-100 pv1">
         <a href="/index.html" title="Home" class="">
             <img id="nav-logo" src="/assets/edgi-logo-b.png">
         </a>
         <div id="nav-txt" class="di"><h3 class="f5 ttu tl mb0 di">Part {{ page.section }}</h3><h3 class="f5 fw3 ttu tl mb0 di"> | {{ page.title }}</h3></div>
     </div>
-    <div class="back-to-article dib mh3">
-        <div class="dib">
-            <a href="/pursuing-toxic-agenda/" class="dib tc">
-                <img alt="back" src="/assets/back.png" style="width:40px; margin-bottom:10px">
-                <h3 class="f5 fw1 ttu">Back to Main Article</h3>
-            </a>
-        </div>
-    </div>
+    {% include back-to-article-part2.html %}
+
     <main class="article center measure-wide f5 pb1 pt5 lh-copy ph2">
         <p>EDGI emphasizes good data practices which includes proper contextualization of data used in reports. Here we add some notes on data used in Figures 4, 5, and 6 in the online report. For figure 4 we show Pipeline and Hazardous Materials Safety Administration (PHMSA) columns of interest to show that pipelines leak. Figure 5 is an infographic that gathers data from many different sources to show the ways in which its agricultural use is dangerous to farmworkers and their families. Figure 6 combines U.S. Geological Survey (USGS), National Water Quality Program, respectively, with Census data downloaded from the <a href="https://www.census.gov/did/www/saipe/about/index.html">Small Area Income and Poverty (SAIPE) </a>program tool. We combine data on income and chlorpyrifos use because this report focuses on environmental justice, which attends to how environmental health risks are unevenly spread throughout the country with regard to environmental damage and income. We hope providing this data together creates opportunities for readers to further research the connections between income, pipeline spills, and other important factors such as race/ethnicity.
         <!-- If readers wish to build on this analysis, the data sets and map used are hosted on github (link) and available under licence____. -->

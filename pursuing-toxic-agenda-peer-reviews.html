@@ -11,16 +11,7 @@ redirect_from:
 ---
 
 <body class="bg-white">
-
-    <div id="nav" class="w-100 pv1">
-        <a href="/index.html" title="Home">
-            <img id="nav-logo" src="/assets/edgi-logo-b.png">
-        </a>
-
-        <div id="nav-txt" class="di">
-            <h3 class="f5 ttu tl mb0 di">Part {{ page.section }}</h3>
-            <h3 class="f5 fw3 ttu tl mb0 di"> | {{ page.title }}</h3></div>
-    </div>
+    <!--HEADER-->
     <header id="wrapper2">
         <div id="bg2" class="chbg"></div>
         <div id="p2-inner-wrapper">
@@ -31,16 +22,17 @@ redirect_from:
         </div>
     </header>
 
+    <!--NAVIGATION-->
+    <div id="nav" class="w-100 pv1">
+        <a href="/index.html" title="Home">
+            <img id="nav-logo" src="/assets/edgi-logo-b.png">
+        </a>
 
-
-    <div class="back-to-article dib mh3">
-        <div class="dib">
-            <a href="/pursuing-toxic-agenda/" class="dib tc">
-                <img alt="back" src="/assets/back.png" style="width:40px; margin-bottom:10px">
-                <h3 class="f5 fw1 ttu">Back to Main Article</h3>
-            </a>
-        </div>
+        <div id="nav-txt" class="di">
+            <h3 class="f5 ttu tl mb0 di">Part {{ page.section }}</h3>
+            <h3 class="f5 fw3 ttu tl mb0 di"> | {{ page.title }}</h3></div>
     </div>
+    {% include back-to-article-part2.html %}
 
     <!--MAIN ARTICLE-->
     <main class="article center measure-wide f5 pb1 pt5 lh-copy ph2" style="overflow-x:visible;">

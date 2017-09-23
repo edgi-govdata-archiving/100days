@@ -31,14 +31,9 @@ Commits and merges into `master` will be deployed to the production server, curr
 
 ### Manual
 
-1. Remove existing archive file `100days.tar.gz` in folder (this should not be under version control)
-    ```bash
-    $ rm -f 100days.tar.gz
-    ```
 1. Build and archive site locally:
     ```bash
-    $ bundle exec jekyll build
-    $ cd _site && tar -czf ../100days.tar.gz * && cd ..
+    $ bundle exec rake archive
     ```
 1. Upload tar archive to webroot via cPanel: `Files > File Manager > /100days.envirodatagov.org`
 1. Extract archive within interface. (This will overwrite existing files.)

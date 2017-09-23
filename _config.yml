@@ -39,3 +39,4 @@ exclude:
   - scripts
   - sample.env
   - .env
+  - 100days.tar.gz

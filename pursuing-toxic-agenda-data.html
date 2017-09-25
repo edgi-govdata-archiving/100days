@@ -23,13 +23,10 @@ redirect_from:
         </div>
     </header>
 
-    <!--NAVIGATION-->
-    <div id="nav" class="w-100 pv1">
-        <a href="/index.html" title="Home" class="">
-            <img id="nav-logo" src="/assets/edgi-logo-b.png">
-        </a>
-        <div id="nav-txt" class="di"><h3 class="f5 ttu tl mb0 di">Part {{ page.section }}</h3><h3 class="f5 fw3 ttu tl mb0 di"> | {{ page.title }}</h3></div>
-    </div>
+    <!--NAVIGATION TOP-->
+    {% include nav.html %}
+
+    <!--NAVIGATION SIDEBAR-->
     {% include back-to-article-part2.html %}
 
     <main class="article center measure-wide f5 pb1 pt5 lh-copy ph2">

@@ -29,7 +29,10 @@ $ bundle exec jekyll serve
 
 Commits and merges into `master` will be deployed to the production server, current process is:
 
-### Manual
+The website can be deployed via the Namecheap CPanel user interface, or
+totally via commandline terminal.
+
+### Via Web UI
 
 1. Build and archive site locally:
     ```bash
@@ -38,14 +41,9 @@ Commits and merges into `master` will be deployed to the production server, curr
 1. Upload tar archive to webroot via cPanel: `Files > File Manager > /100days.envirodatagov.org`
 1. Extract archive within interface. (This will overwrite existing files.)
 
-### Scripted
+### Via Commandline Terminal
 
-1. Set the shell environment variables in [`sample.env`](sample.env)
-1. Build site locally:
+1. Build site locally and deploy via FTP:
     ```bash
-    $ bundle exec jekyll build
-    ```
-1. Run the FTP upload script:
-    ```bash
-    $ bundle exec ruby scripts/ftp_upload.rb
+    $ bundle exec rake deploy[<my-ftp-username>, <my-ftp-password>]
     ```

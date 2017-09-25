@@ -36,7 +36,7 @@ exclude:
   - Procfile
   - Rakefile
   - vendor
-  - scripts
+  - lib
   - sample.env
   - .env
   - 100days.tar.gz

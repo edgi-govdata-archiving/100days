@@ -1,7 +1,8 @@
 ---
 layout: default
-title: "Part 1 - The EPA Under Siege"
-description: "The EPA Under Siege: Trump's Assault in History and Testimony"
+section: "1"
+title: "The EPA Under Siege"
+subtitle: "Trump's Assault in History and Testimony"
 author: "Christopher Sellers, Lindsey Dillon, Jennifer Liss Ohayon, Nick Shapiro, Marianne Sullivan, Chris Amoss, Stephen Bocking, Phil Brown, Vanessa De la Rosa, Jill Harrison, Sara Johns, Katherine Kulik, Rebecca Lave, Michelle Murphy, Liza Piper, Lauren Richter, Sara Wylie"
 og-image: "ch1-cover.jpg"
 permalink: /epa-under-siege/
@@ -15,27 +16,26 @@ redirect_from:
         $("#nav").sticky({topSpacing:0, wrapperClassName:"nav-wrapper"});
     });
     </script>
-    <div id="nav" class="w-100 pv1">
-        <a href="/index.html" title="Home" class="">
-            <img id="nav-logo" src="/assets/edgi-logo-b.png">
-        </a>
-        <div id="nav-txt" class="di"><h3 class="f5 ttu tl mb0 di">Part 1</h3><h3 class="f5 fw3 ttu tl mb0 di"> | The EPA Under Siege</h3></div>
-    </div>
+    <!--HEADER-->
     <header id="wrapper1">
         <div id="h_wrapper">
             <div><a id="logo" href="/index.html" title="Home" class=""><img alt="edgi-logo" src="/assets/edgi-logo-b.png" style="width:5vh;min-width:35px; height:auto;"></a></div>
             <div id="bg1">
-                <div id="title"><h1 class="fw6 f-5-l f4-m f4-ns ttu">The EPA Under Siege</h1></div>
-                <div id="subtitle"><h2 class="f3 fw3 ttu">Trump’s Assault in History and Testimony</h2></div>
+                <div id="title"><h1 class="fw6 f-5-l f4-m f4-ns ttu">{{ page.title }}</h1></div>
+                <div id="subtitle"><h2 class="f3 fw3 ttu">{{ page.subtitle }}</h2></div>
 
             </div>
             <div class="intro tc pv4-ns">
-                <p class="f5-l f7-m f7-ns fw1 lh-copy">Christopher Sellers, Lindsey Dillon, Jennifer Liss Ohayon, Nick Shapiro, Marianne Sullivan, Chris Amoss, Stephen Bocking, Phil Brown, Vanessa De la Rosa, Jill Harrison, Sara Johns, Katherine Kulik, Rebecca Lave, Michelle Murphy, Liza Piper, Lauren Richter, Sara Wylie</p>
+                <p class="f5-l f7-m f7-ns fw1 lh-copy">{{ page.author }}</p>
             </div>
             <div id="down"></div>
         </div>
     </header>
 
+    <!--NAVIGATION TOP-->
+    {% include nav.html %}
+
+    <!--NAVIGATION SIDEBAR-->
     <div id="aside" class="pv5 mh6 dn-ns dn-m dib-l">
         <div class="aside">
             <a href="https://envirodatagov.org/wp-content/uploads/2017/06/Part-1-EPA-Under-Siege.pdf" class="aside-el">
@@ -52,16 +52,7 @@ redirect_from:
             </a>
         </div>
     </div>
-
-    <div class="back-to-top dib mh3 dn-ns dn-m dib-l">
-        <div class="dib">
-            <a href="#h.ndno7y5z1mor" class="dib tc">
-                <img alt="top" src="/assets/top.png" class="" style="width:40px; margin-bottom:10px">
-                <h3 class="f5 fw1 ttu">Back to Table of Contents</h3>
-            </a>
-        </div>
-    </div>
-
+    {% include back-to-top.html %}
 
     <!--MAIN ARTICLE-->
 	<main class="article center measure-wide f5 pt5 lh-copy ph2">

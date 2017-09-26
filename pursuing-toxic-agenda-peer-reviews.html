@@ -1,7 +1,8 @@
 ---
 layout: default
-title: "Part II Peer Reviews"
-description: "Pursuing a Toxic Agenda: Environmental Injustice in the Early Trump Administration"
+section: "2"
+title: "Peer Reviews"
+subtitle: "Pursuing a Toxic Agenda: Environmental Injustice in the Early Trump Administration"
 author: "Dr. Jill Harrison, Dr. Ellen Kohl"
 og-image: "ch2-cover.jpg"
 permalink: /pursuing-toxic-agenda-peer-reviews/
@@ -10,36 +11,22 @@ redirect_from:
 ---
 
 <body class="bg-white">
-
-    <div id="nav" class="w-100 pv1">
-        <a href="/index.html" title="Home">
-            <img id="nav-logo" src="/assets/edgi-logo-b.png">
-        </a>
-
-        <div id="nav-txt" class="di">
-            <h3 class="f5 ttu tl mb0 di">Part 2</h3>
-            <h3 class="f5 fw3 ttu tl mb0 di"> | Peer reviews</h3></div>
-    </div>
+    <!--HEADER-->
     <header id="wrapper2">
         <div id="bg2" class="chbg"></div>
         <div id="p2-inner-wrapper">
-            <div class="part"><h2 class="f3 ttu">Part 2</h2></div>
-              <h1 class="f-6-l f4-m f4-ns ttu tl">Peer Reviews</h1>
-              <h2 class="f3 fw3 ttu tl pv2">Pursuing a Toxic Agenda: Environmental Injustice in the Early Trump Administration</h2>
-              <p id="contrib"class="f5-l f7-m f7-ns fw1 lh-copy">Dr. Jill Harrison, Dr. Ellen Kohl</p>
+            <div class="part"><h2 class="f3 ttu">Part {{ page.section }}</h2></div>
+              <h1 class="f-6-l f4-m f4-ns ttu tl">{{ page.title }}</h1>
+              <h2 class="f3 fw3 ttu tl pv2">{{ page.subtitle }}</h2>
+              <p id="contrib"class="f5-l f7-m f7-ns fw1 lh-copy">{{ page.author }}</p>
         </div>
     </header>
 
+    <!--NAVIGATION TOP-->
+    {% include nav.html %}
 
-
-    <div class="back-to-article dib mh3">
-        <div class="dib">
-            <a href="/pursuing-toxic-agenda/" class="dib tc">
-                <img alt="back" src="/assets/back.png" style="width:40px; margin-bottom:10px">
-                <h3 class="f5 fw1 ttu">Back to Main Article</h3>
-            </a>
-        </div>
-    </div>
+    <!--NAVIGATION SIDEBAR-->
+    {% include back-to-article-part2.html %}
 
     <!--MAIN ARTICLE-->
     <main class="article center measure-wide f5 pb1 pt5 lh-copy ph2" style="overflow-x:visible;">

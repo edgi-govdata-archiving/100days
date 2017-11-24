@@ -91,7 +91,7 @@ header {
   justify-content: space-between;
 }
 section {
-  width: 100vw;
+  width: 100%;
   min-height: 800px;
   height: 100vh;
   margin-bottom: 10vh;

@@ -158,6 +158,9 @@ h1, h2, h3, h4, h5, h6, cite {
 .article h1, .appendix h1 {
   padding-top: 2em;
 }
+.article h2, .article h3 {
+  text-transform: capitalize;
+}
 .table-title {
   padding-bottom: 15px;
   margin-bottom: 0;

@@ -117,12 +117,11 @@ h1, h2, h3, h4, h5, h6, cite {
 a {
   color: #4FBBA9;
   box-sizing: content-box;
-  /*color: black;*/
-  /*text-decoration: underline;*/
+  text-decoration: none;
 }
 a:hover {
   color: #111;
-  text-decoration: underline;
+  
 }
 
 /* BLOCKQUOTES */

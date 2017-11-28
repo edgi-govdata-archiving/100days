@@ -72,7 +72,6 @@ li > ol {
   font-size: 1.1em;
   margin-bottom: 0;
 }
-
 ol > h3 > li {
   counter-increment: item;
   list-style-type: upper-roman;
@@ -119,7 +118,7 @@ a {
   box-sizing: content-box;
   text-decoration: none;
   margin-bottom: 50px;
-  transform: translateX(50px);
+  transform: translateY(50px);
 }
 a:hover {
   color: #111;
@@ -172,7 +171,6 @@ blockquote.appendix p:last-child:after {
 header {
   width: 100vw;
   min-height: 500px;
-  max-height: 900px;
   height: 100vh;
   position: relative;
   overflow: hidden;
@@ -191,7 +189,6 @@ header {
 .chbg {
   position: relative;
   height: 100vh;
-  max-height: 900px;
   min-height: 500px;
   width: 50vw;
   box-sizing: border-box;
@@ -205,6 +202,12 @@ header {
 }
 #bg2 {
   background: url("/assets/partII-cover-image.jpg");
+  background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#bg2a {
+  background: url("/assets/mustafa.jpg");
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -270,15 +273,11 @@ header {
 #nav > a {
   text-decoration: none;
 }
+
 /* SIDEBAR STUFF */
-#aside {
-  float: right;
-}
 .aside {
   vertical-align: middle;
   text-align: center;
-  padding-left: 10%;
-  padding-right: 10%;
 }
 .back-to-top {
   position: absolute;
@@ -317,6 +316,27 @@ header {
   display: inline-block;
   text-align: center;
 }
+
+/* MAIN FLEX */
+  #txt_plus_sides {
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-between;
+  }
+  main {
+    flex: initial;
+    padding-top: 4rem;
+  }
+  #aside {
+    height: auto;
+    flex: 1;
+  }
+  .aside {
+    display: flex;
+    flex-direction: column;
+  }
+
+
 /* MAPS */
 #spillMap, #pesticideMap {
   width:70vw;
@@ -410,7 +430,7 @@ figcaption.wide-fig {
   background: url("/assets/ch1-cover.jpg");
 }
 #btm_throw_right_img{
-  background: url("/assets/ali.jpg");
+  background: url("/assets/mustafa.jpg");
 }
 #btm_throw_left_img, #btm_throw_right_img{
   box-sizing: border-box;
@@ -522,6 +542,29 @@ footer a:hover{
     flex: 0;
     order: 3;
   }
+  .back-to-top, .back-to-top-2, .back-to-article {
+    display: none;
+    visibility: collapse;
+  }
+
+  #txt_plus_sides {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .aside {
+    flex-direction: row;
+    justify-content: space-around;
+  }
+  .aside a {
+    transform: translateX(0);
+  }
+  #aside {
+    max-width: 100%;
+  }
+  main {
+    padding-top: 0;
+  }
 
   #spillMap, #pesticideMap {
     width: 100vw;
@@ -533,27 +576,7 @@ footer a:hover{
     transform: translateX(-50%);
     z-index: 1;
   }
-  .back-to-article{
-    visibility: collapse;
-  }
-  .back-to-top{
-    visibility: collapse;
-  }
-  #title > h1 {
-    font-size: 3em;
-    top: 0vh;
-  }
-  #subtitle {
-    left: 2vw;
-  }
-  #intro {
-    width: 80vw;
-  }
-  #bg2a {
-    top: 0;
-    width: 100vw;
-    height: 50vh;
-  }
+
   #btm_throw {
     width: 95%;
   }

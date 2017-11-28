@@ -167,6 +167,7 @@ blockquote.appendix p:last-child:after {
   left: 1em;
   top: 1em;
   z-index: 1;
+  transform: translateX(0);
 }
 header {
   width: 100vw;

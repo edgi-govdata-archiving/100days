@@ -64,7 +64,7 @@ figcaption {
 
 /* LISTS */
 ul, ol {
-  margin-left: 30px;
+  margin-left: 50px;
   counter-reset: item;
 }
 li > ul,
@@ -121,7 +121,7 @@ a {
 }
 a:hover {
   color: #111;
-  
+
 }
 
 /* BLOCKQUOTES */

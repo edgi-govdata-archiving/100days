@@ -118,6 +118,8 @@ a {
   color: #4FBBA9;
   box-sizing: content-box;
   text-decoration: none;
+  margin-bottom: 50px;
+  transform: translateX(50px);
 }
 a:hover {
   color: #111;

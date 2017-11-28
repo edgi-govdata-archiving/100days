@@ -5,6 +5,7 @@ description: "Environmental Injustice in the Early Trump Administration"
 author: "Britt S. Paris, Lindsey Dillon, Jennifer Pierre, Irene V. Pasquetto, Emily Marquez, Sara Wylie, Michelle Murphy, Phil Brown, Rebecca Lave, Chris Sellers, Becky Mansfield, Leif Fredrickson, Nicholas Shapiro, EDGI"
 og-image: "ch2-cover.jpg"
 permalink: /pursuing-toxic-agenda/
+comments: true
 redirect_from:
   - 'pursuing-toxic-agenda.html'
 ---
@@ -45,10 +46,10 @@ redirect_from:
                 <h3 class="f5 fw1 ttu tc">Interview with<br/>Mustafa Ali</h3>
             </a>
 
-            <!-- <a href="#disqus_thread" class="aside-el">
+            <a href="#disqus_thread" class="aside-el">
                 <img alt="pdf" src="/assets/comment.png" style="width:40px; margin-bottom:10px">
                 <h3 class="f5 fw1 ttu">Comments</h3>
-            </a> -->
+            </a>
         </div>
     </div>
 
@@ -929,8 +930,27 @@ redirect_from:
             back by Nanda Ririz from the Noun Project</p>
             <p>Cover Photo: Sam Hodgson</p>
         </div>
+        <hr>
     </div>
+    {% if page.comments %}
+        <h3 class="tc f5 pb3">Comments</h3>
+        <div id="disqus_thread" class="center measure"></div>
+        <script>
 
+        var disqus_config = function () {
+        this.page.url = 'https://100days.envirodatagov.org/pursuing-toxic-agenda/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = '/pursuing-toxic-agenda/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://100-days.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    {% endif %}
     <!--FOOTER-->
     {% include footer.html %}
 

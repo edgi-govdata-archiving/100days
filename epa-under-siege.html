@@ -5,6 +5,7 @@ description: "The EPA Under Siege: Trump's Assault in History and Testimony"
 author: "Christopher Sellers, Lindsey Dillon, Jennifer Liss Ohayon, Nick Shapiro, Marianne Sullivan, Chris Amoss, Stephen Bocking, Phil Brown, Vanessa De la Rosa, Jill Harrison, Sara Johns, Katherine Kulik, Rebecca Lave, Michelle Murphy, Liza Piper, Lauren Richter, Sara Wylie"
 og-image: "ch1-cover.jpg"
 permalink: /epa-under-siege/
+comments: true
 redirect_from:
   - '/epa-under-siege.html'
 ---
@@ -1708,26 +1709,25 @@ redirect_from:
         </div>
         <hr>
     </div>
-    <div id="disqus_thread" class="measure-wide center pv4"></div>
-<script>
+    {% if page.comments %}
+        <h3 class="tc f5 pb3">Comments</h3>
+        <div id="disqus_thread" class="center measure"></div>
+        <script>
 
-/**
-*  RECOMMENDED CONFIGURATION VARIABLES: EDIT AND UNCOMMENT THE SECTION BELOW TO INSERT DYNAMIC VALUES FROM YOUR PLATFORM OR CMS.
-*  LEARN WHY DEFINING THESE VARIABLES IS IMPORTANT: https://disqus.com/admin/universalcode/#configuration-variables*/
-/*
-var disqus_config = function () {
-this.page.url = PAGE_URL;  // Replace PAGE_URL with your page's canonical URL variable
-this.page.identifier = PAGE_IDENTIFIER; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
-};
-*/
-(function() { // DON'T EDIT BELOW THIS LINE
-var d = document, s = d.createElement('script');
-s.src = 'https://100-days.disqus.com/embed.js';
-s.setAttribute('data-timestamp', +new Date());
-(d.head || d.body).appendChild(s);
-})();
-</script>
-<noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript" target="_blank" rel="noopener">comments powered by Disqus.</a></noscript>
+        var disqus_config = function () {
+        this.page.url = 'https://100days.envirodatagov.org/epa-under-siege/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = '/epa-under-siege/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://100-days.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    {% endif %}
 
     <!--FOOTER-->
     {% include footer.html %}

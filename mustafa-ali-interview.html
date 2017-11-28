@@ -5,6 +5,7 @@ description: "Former head of the EPA Office of Environmental Justice"
 author: "Lindsey Dillon"
 og-image: "mustafa.jpg"
 permalink: /mustafa-ali-interview/
+comments: true
 redirect_from:
   - 'mustafa-ali-interview.html'
 ---
@@ -26,7 +27,7 @@ redirect_from:
         </a>
         <div id="nav-txt" class="di"><h3 class="f5 ttu tl mb0 di">Part 2</h3><h3 class="f5 fw3 ttu tl mb0 di"> | INTERVIEW WITH MUSTAFA ALI</h3></div>
     </div>
-    <!-- <div id="aside" class="pv6 mh6 dn-ns dn-m dib-l">
+    <div id="aside" class="pv6 mh6 dn-ns dn-m dib-l">
         <div class="aside">
             <a href="https://envirodatagov.org/wp-content/uploads/2017/09/Part-2-Pursuing-Toxic-Agenda.pdf" target="_blank" rel="noopener" class="aside-el">
                 <img alt="pdf" src="/assets/pdf.png" style="width:40px; margin-bottom:10px">
@@ -37,7 +38,7 @@ redirect_from:
                 <h3 class="f5 fw1 ttu">Comments</h3>
             </a>
         </div>
-    </div> -->
+    </div>
 
     <div class="back-to-article dib mh3">
         <div class="dib">
@@ -238,7 +239,6 @@ redirect_from:
 
     </div>
     <div class="footnotes center measure-wide f6">
-
     	<h3 class="tc pb3">Footnotes</h3>
 
         <div>
@@ -247,8 +247,26 @@ redirect_from:
         <div>
             <p><a href="#ftnt_ref132" id="ftnt132">[132]</a> See, for example, U.S. EPA, &ldquo;State Environmental Justice Cooperative Agreements&rdquo;,  <a href="https://www.epa.gov/environmentaljustice/state-environmental-justice-cooperative-agreements-sejca" target="_blank" rel="noopener">https://www.epa.gov/environmentaljustice/state-environmental-justice-cooperative-agreements-sejca</a> (accessed August 20, 2017). </p>
         </div>
+        <hr>
     </div>
+    {% if page.comments %}
+        <h3 class="tc f5 pb3">Comments</h3>
+        <div id="disqus_thread" class="center measure"></div>
+        <script>
 
+        var disqus_config = function () {
+        this.page.url = 'https://100days.envirodatagov.org/mustafa-ali-interview/';  // Replace PAGE_URL with your page's canonical URL variable
+        this.page.identifier = '/mustafa-ali-interview/'; // Replace PAGE_IDENTIFIER with your page's unique identifier variable
+        };
+        (function() { // DON'T EDIT BELOW THIS LINE
+        var d = document, s = d.createElement('script');
+        s.src = 'https://100-days.disqus.com/embed.js';
+        s.setAttribute('data-timestamp', +new Date());
+        (d.head || d.body).appendChild(s);
+        })();
+        </script>
+        <noscript>Please enable JavaScript to view the <a href="https://disqus.com/?ref_noscript">comments powered by Disqus.</a></noscript>
+    {% endif %}
     <!--FOOTER-->
     {% include footer.html %}
 

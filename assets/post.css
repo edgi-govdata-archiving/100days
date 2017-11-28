@@ -159,7 +159,7 @@ h1, h2, h3, h4, h5, h6, cite {
   padding-top: 2em;
 }
 .article h2, .article h3 {
-  text-transform: capitalize;
+  padding-top: 1.5em;
 }
 .table-title {
   padding-bottom: 15px;
@@ -244,11 +244,11 @@ pre > code {
 /**
  * Clearfix
  */
-.wrapper:after, .footer-col-wrapper:after {
+/*.wrapper:after, .footer-col-wrapper:after {
   content: "";
   display: table;
   clear: both;
-}
+}*/
 
 /**
  * Site header
@@ -319,7 +319,7 @@ ol ol ol > li {
 }
 header {
   width: 100vw;
-  min-height: 800px;
+  min-height: 500px;
   max-height: 900px;
   height: 100vh;
   position: relative;
@@ -386,7 +386,7 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
 }
-#bg2a {
+/*#bg2a {
   box-sizing: content-box;
   position: relative;
   display: inline;
@@ -494,7 +494,7 @@ header {
   background-size: contain;
   background-repeat: no-repeat;
   bottom: 2vh;
-}
+}*/
 p > mark {
   background-color: #fbede2;
 }

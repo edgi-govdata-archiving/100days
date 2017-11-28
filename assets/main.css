@@ -74,6 +74,7 @@ a.dark:hover {
   order: 3;
   align-items: flex-end;
   margin-bottom: 3vh;
+  height: auto;
 }
 
 /**
@@ -94,7 +95,6 @@ section {
   width: 100%;
   min-height: 800px;
   height: 100vh;
-  margin-bottom: 10vh;
   position: relative;
   overflow: hidden;
   display: flex !important;
@@ -109,7 +109,7 @@ section {
   position: relative;
   box-sizing: border-box;
   flex-direction: column;
-  justify-content: space-around;
+  justify-content: space-between;
   align-content: space-around;
   height: 100vh;
 }
@@ -120,7 +120,7 @@ section {
   flex-direction: column;
   justify-content: flex-start;
   align-content: flex-start;
-  min-height: 600px;
+  min-height: 400px;
   height: 70vh;
   width: 50vw;
   left: 3vw;
@@ -292,6 +292,7 @@ div.readch-app {
   position: relative;
   text-align: left;
   width: 40vw;
+  box-sizing: content-box;
 }
 .readch-app h2, h3 {
   display: block;
@@ -328,269 +329,62 @@ div.readch-app {
   left: 90vw;
   z-index: 4;
 }
-footer {
-  bottom: 0;
-  margin-top: 8vh;
-  padding: 0.5em;
-  position: relative;
-}
-small{
-  width: 90vw;
+footer{
+  flex-direction: row;
+  align-items: flex-end;
+  justify-content: space-between;
 }
 
+footer a{
+  color: grey;
+  text-decoration: none;
+}
+footer a:hover{
+  text-decoration: underline;
+}
+#footer_edg{
+  display: flex;
+  /*flex-direction: column;*/
+  align-items: flex-end;
+}
+.social {
+  width: 15px;
+  height: 15px;
+}
 /**
- * Media for different screen sizes
+ * MEDIA QUERIES
  */
-@media only screen and (min-width : 1000px) and (max-height:800px){
-  header, section, .inner_wrapper, #h_wrapper{
-    min-height: 800px;
-  }
-  #bg {
-    min-height: 600px;
-    margin-top: 100px;
-    top: 2vh;
-    flex: 0;
-  }
-  .chbg{
-    min-height: 100%;
-  }
-  #intro {
-    top: -200px;
-  }
-  #down {
-    top: -100px;
-  }
-}
 
-@media only screen and (min-width : 320px) and (max-width:1000px) and (max-height:800px){
-  header, section, #h_wrapper{
-    min-height: 800px;
-  }
-  #bg {
-    margin-top: 60px;
-    top: 0;
-    flex: 0;
-  }
-  .chbg{
-    min-height: 400px;
-  }
-}
-
-@media only screen and (min-width : 320px) and (max-width : 480px) and (max-height:800px){
-  footer {
-    margin-top: 3vh;
-  }
-  #bg {
-    min-height: 450px;
-    height: 60vh;
-    max-height: 400px;
-    width: 100vw;
-    top: 0;
-    margin-top: 0;
-    margin-bottom: 0;
-    flex: 0;
-    z-index: 1;
-  }
-  #logo {
-    z-index: 2;
-  }
-  #title {
-    top: 355px;
-    left: 0;
-    text-align: center;
-    background-color: white;
-  }
-  #title > h1 {
-    font-size: 2.3em;
-  }
-  #subtitle {
-    top: 355px;
-    left: 0vw;
-    text-align: center;
-    background-color: white;
-  }
-  #subtitle > h1 {
-    font-size: 1.8em;
-  }
-  #intro {
-    width: 90vw;
-    margin: auto;
-    z-index: 5;
-    top: 0vh;
-  }
-  #intro > p{
-    font-size: 1em;
-  }
-  #down {
-    visibility: collapse;
-  }
-  header {
-    height: auto;
-  }
-  .chbg {
-    position: relative;
-    height: 50vh;
-    min-height: 300px;
-    width: 100vw;
-    background-repeat: no-repeat;
-    box-sizing: border-box;
-    margin: 0;
-  }
-  .inner_wrapper {
-    justify-content:flex-start;
-    width: 90vw;
-    min-height: 400px;
-    padding: 0;
-    left: 0;
-    height: 50vh;
-  }
-  section {
-    flex-direction: column;
-    justify-content: flex-start;
-    align-items: center;
-    flex-wrap: nowrap;
-    display: flex;
-    margin-top: 3vh;
-    margin-bottom: 4vh;
-    min-height: 700px;
-    max-height: 900px;
-    height: auto;
-  }
-  .part {
-    bottom: 350px;
-    left: -5vw;
-  }
-  .part > h2 {
-    padding: 0 0.5em;
-  }
-  .ch_titles a h1 {
-    font-size: 2.2em;
-    margin: 0;
-    padding: 0;
-  }
-  .ch_titles {
-    padding: 1em;
-    top: -5vh;
-    margin: 0;
-    margin-bottom: 3vh;
-    flex: 1;
-  }
-  #buttons {
-    flex: 4;
-  }
-  div.readch-app {
-    width: 90vw;
-    min-height: 50px;
-    height: 5vh;
-    margin: 0;
-    padding: 1em;
-    margin-bottom: 1vh;
-  }
-  .ra1 > h2 {
-    font-size: 1em;
-  }
-  .ra1 > h3 {
-    visibility: hidden;
-    display: none;
-  }
-}
-
-@media only screen and (min-width : 480px) and (max-width : 825px){
-  footer {
-    margin-top: 3vh;
-  }
-  #bg {
-    max-height: 400px;
-    height: 50vh;
-    max-width: 90vw;
-    margin-bottom: 0;
-    background-position: center;
-  }
-  #title {
-    left: 0;
-  }
-  #title > h1 {
-    font-size: 2.6em;
-  }
-  #subtitle {
-    left: 15vw;
-  }
-  #subtitle > h1 {
-    font-size: 1.8em;
-  }
-  #intro {
-    width: 90vw;
-    margin: auto;
-    top: 0vh;
-  }
-  #intro > p{
-    font-size: 1em;
-  }
-  #down {
-    width: 2em;
-    height: 1.5em;
-    margin: auto;
-    top: 0vh;
-  }
-  #h_wrapper {
-    height: 100vh;
-    justify-content:space-around;
-  }
-}
-
-@media only screen and (min-width : 825px) and (max-width : 1024px){
+@media only screen and (max-width : 1100px) {
   #bg {
     height: 70vh;
-    max-width: 90vw;
+    width: 100%;
     margin-bottom: 0;
     background-position: center;
+    position:static;
   }
-  #title {
-    left: 0;
+  #title, #subtitle {
+    top: 10vh;
   }
-  #title > h1 {
-    font-size: 2.6em;
+  #title h1 {
+    font-size: 3em;
   }
-  #subtitle {
-    left: 15vw;
-  }
-  #subtitle > h1 {
-    font-size: 1.8em;
+  #subtitle h1 {
+    font-size: 1.5em;
   }
   #intro {
-    width: 90vw;
+    width: 100%;
+    padding: 1em 2em;
+    margin-bottom: 2em;
+    top: 0;
   }
-  #intro > p{
+  #intro p {
     font-size: 1em;
   }
   #down {
+    height: 1em;
+    width: 2em;
   }
-  div.readch-app{
-    height: 15vh;
-  }
-}
-@media only screen and (min-width : 1024px) and (max-width : 1225px){
-  #intro {
-    top: -15vh;
-  }
-  #intro > p{
-    font-size: 1em;
-  }
-  #down {
-    margin: auto;
-  }
-  section,header {
-    height: 100vh;
-  }
-  #h_wrapper {
-    height: 100%;
-  }
-  div.readch-app{
-    height: 15vh;
-  }
-}
-
-@media only screen and (min-width : 480px) and (max-width : 1000px) {
   .chbg {
     position: relative;
     min-height: 400px;
@@ -615,29 +409,38 @@ small{
     display: flex;
     margin-top: 3vh;
   }
-  .part {
-    bottom: 23em;
-    left: -5vw;
+  div.part {
+    padding: 0;
+
   }
   .part > h2 {
-    padding: 0 0.5em;
+    padding: 0;
+    margin: 0;
+    font-size: 1.3em;
   }
   .ch_titles a h1 {
-    font-size: 2.2em;
+    font-size: 2em;
     margin: 0;
     padding: 0;
   }
+  .ch_titles a h3 {
+    font-size: 1.3em;
+    margin: 0;
+    padding: 0;
+    width: 80%;
+    margin-bottom: 1em;
+  }
   .ch_titles {
     padding: 0;
-    top: -5vh;
     margin: 0;
     flex: 1;
   }
   #buttons{
     flex: 2;
+    margin-bottom: 0;
   }
   div.readch-app {
-    width: 90vw;
+    width: 80%;
     min-height: 60px;
     height: 8vh;
     margin: 0;
@@ -649,5 +452,50 @@ small{
   }
   .ra1 > h3 {
     font-size: 1em;
+  }
+  footer{
+    flex-direction: column-reverse;
+    align-items: center;
+    margin-top: 2em;
+    text-align: center;
+    margin-top: 2em;
+    text-align: center;
+    border-top: 1px solid #dfdfdf;
+  }
+  #footer_edg{
+    flex-direction: column-reverse;
+    align-items: center;
+  }
+}
+@media only screen and (max-width : 399px) {
+  #title, #subtitle {
+    left: 0;
+    top: 10vh;
+  }
+  #title h1 {
+    font-size: 2em;
+  }
+  #subtitle h1 {
+    font-size: 1.2em;
+  }
+  #down {
+    display: none;
+  }
+  #intro p {
+    line-height: 1.25em;
+  }
+  .inner_wrapper {
+    justify-content: space-between;
+  }
+  .ra1 h3 {
+    display: none;
+  }
+  div.readch-app {
+    width: 90%;
+    min-height: 60px;
+    height: 8vh;
+    margin: 0;
+    padding: 0 1em;
+    margin-bottom: 1vh;
   }
 }

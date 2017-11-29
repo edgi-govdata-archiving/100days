@@ -100,10 +100,10 @@ h1, h2, h3, h4, h5, h6, cite {
   text-align: center;
   text-transform: uppercase;
 }
-.article h1, .appendix h1 {
+article h1, .appendix h1 {
   padding-top: 2em;
 }
-.article h2, .article h3 {
+article h2, article h3 {
   padding-top: 1.5em;
 }
 .table-title {
@@ -117,12 +117,9 @@ a {
   color: #4FBBA9;
   box-sizing: content-box;
   text-decoration: none;
-  margin-bottom: 50px;
-  transform: translateY(50px);
 }
 a:hover {
   color: #111;
-
 }
 
 /* BLOCKQUOTES */
@@ -189,6 +186,7 @@ header {
 .chbg {
   position: relative;
   height: 100vh;
+
   min-height: 500px;
   width: 50vw;
   box-sizing: border-box;
@@ -318,22 +316,33 @@ header {
 }
 
 /* MAIN FLEX */
-  #txt_plus_sides {
-    display: flex;
-    flex-direction: row-reverse;
-    justify-content: space-between;
-  }
   main {
-    flex: initial;
-    padding-top: 4rem;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
   }
-  #aside {
-    height: auto;
+  .left-sidebar {
     flex: 1;
+    order: 1;
   }
-  .aside {
+  aside {
+    flex: 1;
+    order: 3;
+  }
+  article {
+    flex: 2;
+    order: 2;
+    padding-top: 4rem;
+    max-width: 40em;
+  }
+
+  .aside-wrapper {
     display: flex;
     flex-direction: column;
+    align-items: center;
+  }
+  .aside-el {
+    text-align: center;
   }
 
 
@@ -405,6 +414,7 @@ figcaption.wide-fig {
     width: 75%;
     margin: auto;
     border-bottom: 1px solid black;
+    padding-bottom: 2em;
 }
 #btm_throw_content {
   display: flex;
@@ -420,7 +430,7 @@ figcaption.wide-fig {
 }
 #btm_throw_left{
   padding-right: 2em;
-  border-right:1px solid #000;
+  border-right:1px solid #9c9c9c;
 }
 #btm_throw_right{
   padding-left: 2em;
@@ -430,7 +440,7 @@ figcaption.wide-fig {
   background: url("/assets/ch1-cover.jpg");
 }
 #btm_throw_right_img{
-  background: url("/assets/mustafa.jpg");
+  background: url("/assets/ali.jpg");
 }
 #btm_throw_left_img, #btm_throw_right_img{
   box-sizing: border-box;
@@ -542,28 +552,32 @@ footer a:hover{
     flex: 0;
     order: 3;
   }
-  .back-to-top, .back-to-top-2, .back-to-article {
+  .left-sidebar {
     display: none;
     visibility: collapse;
   }
 
-  #txt_plus_sides {
+  main {
     display: flex;
     flex-direction: column;
+    padding: 10px;
   }
 
-  .aside {
+  .aside-wrapper {
     flex-direction: row;
     justify-content: space-around;
   }
-  .aside a {
-    transform: translateX(0);
-  }
-  #aside {
+
+  aside {
     max-width: 100%;
+    order: 1;
   }
-  main {
-    padding-top: 0;
+  article {
+    padding-top: 2em;
+    order: 2;
+    align-self: center;
+    width: 40em;
+    max-width: 97%;
   }
 
   #spillMap, #pesticideMap {

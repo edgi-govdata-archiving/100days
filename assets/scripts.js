@@ -18,6 +18,17 @@ $(document).ready(function(){
 $(".back-to-article").sticky({topSpacing:100, wrapperClassName:"back-to-article-wrapper"});
 });
 
+//anchor offset
+$(window).on('load',function(){
+    offsetScroll = function() {
+        scrollTo(0, ($(':target').offset().top -45));
+    }
+    if (location.hash) {
+        setTimeout(offsetScroll, 1);
+    }
+    window.addEventListener("hashchange", offsetScroll);
+});
+
 //spill map
 function initialize_s() {
     var mapProp1 = {

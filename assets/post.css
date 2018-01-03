@@ -210,6 +210,12 @@ header {
   background-size: cover;
   background-repeat: no-repeat;
 }
+#bg3 {
+  background: url("/assets/partIII-cover-image.jpg");
+  background-position: left;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
 #inner-wrapper {
   display: flex;
   position: relative;
@@ -407,7 +413,12 @@ figcaption.wide-fig {
   transform: translateX(-50%);
   z-index: 1;
 }
-
+.cmtBox {
+    display: inline-block;
+    padding: 1em;
+    padding-bottom: 0;
+    background-color: #e9fff5;
+  }
 /*BOTTOM THROW*/
 #btm_throw {
     /*align-content: center;*/
@@ -535,11 +546,12 @@ footer a:hover{
     padding-right: 0;
   }
   #heds > h1 {
-    font-size: 3em;
+    font-size: 2.7em;
     flex: initial;
     order: 1;
   }
   #heds > h2 {
+    font-size: 1.5em;
     flex: auto;
     order: 2;
   }

@@ -215,6 +215,11 @@ section {
   background-position: bottom;
   background-size: cover;
 }
+#ch3bg {
+  background: url("/assets/partIII-cover-image.jpg");
+  background-position: left;
+  background-size: cover;
+}
 .chbg {
   position: relative;
   min-height: 400px;

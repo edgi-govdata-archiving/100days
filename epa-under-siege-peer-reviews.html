@@ -1,7 +1,8 @@
 ---
 layout: default
-title: "Part 1 Peer Reviews"
-description: "The EPA Under Siege: Trump's Assault in History and Testimony"
+section: "1"
+title: "Peer Reviews"
+subtitle: "The EPA Under Siege: Trump's Assault in History and Testimony"
 author: "Dr. Richard Andrews, Dr. Nancy Langston, Dr. Jay Turner"
 og-image: "ch1-cover.jpg"
 permalink: /epa-under-siege-peer-reviews/
@@ -12,22 +13,19 @@ redirect_from:
 <body class="bg-white">
     <div><a id="logo" href="/index.html" title="Home" class=""><img alt="edgi-logo" src="/assets/edgi-logo-b.png" style="width:5vh;min-width:35px; height:auto;"></a></div>
     <header>
-        <div id="bg1" class="chbg"></div>
-        <div id="inner-wrapper">
-            <div id="heds">
-                <h2 class="f3 ttu tl">Part 1</h2>
-                <h1 class="f-6-l f4-m f4-ns ttu tl">Peer Reviews</h1>
-                <h2 class="f3 fw3 ttu tl pv2">The EPA Under Siege: Trump’s Assault in History and Testimony</h2>
-            </div>
-              <p id="contrib" class="f5-l f7-m f7-ns fw1 lh-copy">Dr. Richard Andrews, Dr. Nancy Langston, Dr. Jay Turner</p>
+      <div id="bg1" class="chbg"></div>
+      <div id="inner-wrapper">
+        <div id="heds">
+          <h2 class="f3 ttu tl">Part {{ page.section }}</h2>
+          <h1 class="f-6-l f4-m f4-ns ttu tl">{{ page.title }}</h1>
+          <h2 class="f3 fw3 ttu tl pv2">{{ page.subtitle }}</h2>
         </div>
+          <p id="contrib" class="f5-l f7-m f7-ns fw1 lh-copy">{{ page.author }}</p>
+      </div>
     </header>
-    <div id="nav" class="w-100 pv1">
-        <a href="/index.html" title="Home" class="">
-            <img id="nav-logo" src="/assets/edgi-logo-b.png">
-        </a>
-        <div id="nav-txt" class="di"><h3 class="f5 ttu tl mb0 di">Part 1</h3><h3 class="f5 fw3 ttu tl mb0 di"> | Peer Reviews</h3></div>
-    </div>
+    
+    <!--NAVIGATION TOP-->
+    {% include nav.html %}
 
     <main class="flex">
         <div class="left-sidebar">

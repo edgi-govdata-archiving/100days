@@ -193,7 +193,7 @@ header {
   margin: 0;
 }
 #bg1 {
-  background: url("/assets/ch1-cover.jpg");
+  background: url("/assets/part1-cover.jpg");
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -437,7 +437,7 @@ figcaption.wide-fig {
 }
 
 #btm_throw_left_img {
-  background: url("/assets/ch1-cover.jpg");
+  background: url("/assets/part1-cover.jpg");
 }
 #btm_throw_right_img{
   background: url("/assets/ali.jpg");

@@ -36,7 +36,7 @@ Commits and merges into `master` will be deployed to the production server, curr
 1. Build and archive site locally:
     ```bash
     $ bundle exec jekyll build
-    $ cd _site && tar -czf ../100days.tar.gz * && cd..
+    $ cd _site && tar -czf ../100days.tar.gz * && cd ..
     ```
 1. Upload tar archive to webroot via cPanel: `Files > File Manager > /100days.envirodatagov.org`
 1. Extract archive within interface. (This will overwrite existing files.)

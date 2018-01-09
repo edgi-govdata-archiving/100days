@@ -197,13 +197,13 @@ header {
   margin: 0;
 }
 #bg1 {
-  background: url("/assets/ch1-cover.jpg");
+  background: url("/assets/part1-cover-image.jpg");
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
 }
 #bg2 {
-  background: url("/assets/partII-cover-image.jpg");
+  background: url("/assets/part2-cover-image.jpg");
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -215,7 +215,7 @@ header {
   background-repeat: no-repeat;
 }
 #bg3 {
-  background: url("/assets/partIII-cover-image.jpg");
+  background: url("/assets/part3-cover-image.jpg");
   background-position: left;
   background-size: cover;
   background-repeat: no-repeat;

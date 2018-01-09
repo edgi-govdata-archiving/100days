@@ -206,17 +206,17 @@ section {
   bottom: 3vh;
 }
 #ch1bg {
-  background: url("/assets/partI-cover-image.jpg");
+  background: url("/assets/part1-cover-image.jpg");
   background-position: top;
   background-size: cover;
 }
 #ch2bg {
-  background: url("/assets/partII-cover-image.jpg");
+  background: url("/assets/part2-cover-image.jpg");
   background-position: bottom;
   background-size: cover;
 }
 #ch3bg {
-  background: url("/assets/partIII-cover-image.jpg");
+  background: url("/assets/part3-cover-image.jpg");
   background-position: left;
   background-size: cover;
 }

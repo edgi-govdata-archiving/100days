@@ -172,8 +172,8 @@ blockquote.appendix p:last-child:after {
 }
 header {
   width: 100vw;
-  min-height: 500px;
-  height: 100vh;
+  min-height: 800px;
+  height: 100%;
   position: relative;
   overflow: hidden;
   display: flex !important;
@@ -191,8 +191,7 @@ header {
 .chbg {
   position: relative;
   height: 100vh;
-
-  min-height: 500px;
+  min-height: 800px;
   width: 50vw;
   box-sizing: border-box;
   margin: 0;
@@ -564,7 +563,6 @@ footer a:hover{
     padding: 0;
     margin: 0;
     margin-top: 0vh;
-    margin-bottom: 5vh;
     font-size: 1em;
     flex: 0;
     order: 3;

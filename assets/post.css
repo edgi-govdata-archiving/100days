@@ -33,7 +33,11 @@ p {
   line-height: 1.5em;
   font-size: 1.1em;
 }
-
+.quo {
+  padding-left: 3em;
+  margin-bottom: 2em;
+  font-size: 0.95em;
+}
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */

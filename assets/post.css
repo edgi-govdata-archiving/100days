@@ -33,7 +33,11 @@ p {
   line-height: 1.5em;
   font-size: 1.1em;
 }
-
+.quo {
+  padding-left: 3em;
+  margin-bottom: 2em;
+  font-size: 0.95em;
+}
 /**
  * Set `margin-bottom` to maintain vertical rhythm
  */
@@ -117,6 +121,11 @@ a {
   color: #4FBBA9;
   box-sizing: content-box;
   text-decoration: none;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -ms-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
 }
 a:hover {
   color: #111;
@@ -167,8 +176,8 @@ blockquote.appendix p:last-child:after {
 }
 header {
   width: 100vw;
-  min-height: 500px;
-  height: 100vh;
+  min-height: 800px;
+  height: 100%;
   position: relative;
   overflow: hidden;
   display: flex !important;
@@ -186,20 +195,19 @@ header {
 .chbg {
   position: relative;
   height: 100vh;
-
-  min-height: 500px;
+  min-height: 800px;
   width: 50vw;
   box-sizing: border-box;
   margin: 0;
 }
 #bg1 {
-  background: url("/assets/ch1-cover.jpg");
+  background: url("/assets/part1-cover-image.jpg");
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
 }
 #bg2 {
-  background: url("/assets/partII-cover-image.jpg");
+  background: url("/assets/part2-cover-image.jpg");
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
@@ -207,6 +215,12 @@ header {
 #bg2a {
   background: url("/assets/mustafa.jpg");
   background-position: bottom;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+#bg3 {
+  background: url("/assets/part3-cover-image.jpg");
+  background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
 }
@@ -229,7 +243,7 @@ header {
   padding-bottom: 0.2em;
   margin: 0;
   line-height: 1.2em;
-  font-size: 6em;
+  font-size: 5.5em;
 }
 #contrib {
   padding: 0;
@@ -407,7 +421,12 @@ figcaption.wide-fig {
   transform: translateX(-50%);
   z-index: 1;
 }
-
+.cmtBox {
+    display: inline-block;
+    padding: 1em;
+    padding-bottom: 0;
+    background-color: #e9fff5;
+  }
 /*BOTTOM THROW*/
 #btm_throw {
     /*align-content: center;*/
@@ -535,11 +554,12 @@ footer a:hover{
     padding-right: 0;
   }
   #heds > h1 {
-    font-size: 3em;
+    font-size: 2.7em;
     flex: initial;
     order: 1;
   }
   #heds > h2 {
+    font-size: 1.5em;
     flex: auto;
     order: 2;
   }
@@ -547,7 +567,6 @@ footer a:hover{
     padding: 0;
     margin: 0;
     margin-top: 0vh;
-    margin-bottom: 5vh;
     font-size: 1em;
     flex: 0;
     order: 3;

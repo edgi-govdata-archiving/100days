@@ -18,7 +18,7 @@
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
   <meta property="og:type" content="article"/>
   <meta property="og:url" content="{{ site.production_url }}{{ page.url | replace:'index.html',''}}"/>
-  <meta property="og:description" content="{% if page.description %}{{ page.description }} | {{ page.subtitle }}{% else %}{{ site.description }}{% endif %}" />
+  <meta property="og:description" content="{% if page.description %}{{ page.description }}{% if page.subtitle %} | {{ page.subtitle }}{% endif %}{% else %}{% if page.subtitle %}{{ page.subtitle }} | {% endif %}{{ site.description }}{% endif %}" />
   <meta property="og:image" content="{{ site.production_url }}/assets/{% if page.og-image %}{{ page.og-image }}{% else %}flag-joe-raedle.jpg{% endif %}" />
 
   <!-- Twitter Card -->

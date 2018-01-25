@@ -1,4 +1,4 @@
-require './scripts/ftp_deploy.rb'
+require './lib/ftp_deploy.rb'
 
 namespace :assets do
   task :precompile do
@@ -16,7 +16,7 @@ desc "Archive the website"
 task :archive => [:build] do
   puts "--- Generating archive file 100days.tar.gz from built website files..."
   sh "cd _site && tar --create --gzip --verbose --file ../100days.tar.gz *"
-  puts "--- Done! Create 100days.tar.gz file archive!"
+  puts "--- Done! Created 100days.tar.gz file archive!"
 end
 
 desc "Deploy the website via FTP"

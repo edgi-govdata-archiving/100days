@@ -47,3 +47,6 @@ totally via commandline terminal.
     ```bash
     $ bundle exec rake deploy[<my-ftp-username>, <my-ftp-password>]
     ```
+
+<sub>The default FTP server is `server136.web-hosting.com`. You may set
+the environment variable `100DAYS_FTP_HOST` to override this.</sub>

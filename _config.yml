@@ -26,7 +26,7 @@ github_username: edgi-govdata-archiving
 
 # Build settings
 markdown: kramdown
-gems:
+plugins:
   - jekyll-feed
   - jekyll-redirect-from
 exclude:

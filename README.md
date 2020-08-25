@@ -1,4 +1,4 @@
-[![Code of Conduct](https://img.shields.io/badge/%E2%9D%A4-code%20of%20conduct-blue.svg?style=flat)](https://github.com/edgi-govdata-archiving/overview/blob/master/CONDUCT.md)
+[![Code of Conduct](https://img.shields.io/badge/%E2%9D%A4-code%20of%20conduct-blue.svg?style=flat)](https://github.com/edgi-govdata-archiving/overview/blob/main/CONDUCT.md)
 
 # 100 Days
 
@@ -29,7 +29,7 @@ $ bundle exec jekyll serve
 
 ## Deployment
 
-Commits and merges into `master` will be deployed to the production server, current process is:
+Commits and merges into `main` will be deployed to the production server, current process is:
 
 1. Remove existing `_site` and archived versions `100days.tar.gz` in folder (both of these should not be under version control)
     ```bash

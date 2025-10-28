@@ -23,12 +23,15 @@ url: "https://100days.envirodatagov.org" # the base hostname & protocol for your
 production_url: "https://100days.envirodatagov.org" # Used for canonical url meta tag
 twitter_username: EnviroDGI
 github_username: edgi-govdata-archiving
+remote_theme: pages-themes/minimal@v0.2.0
+
 
 # Build settings
 markdown: kramdown
 plugins:
   - jekyll-feed
   - jekyll-redirect-from
+  - jekyll-remote-theme # add this line to the plugins list if you already have one
 exclude:
   - config.ru
   - Gemfile

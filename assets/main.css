@@ -1,3 +1,6 @@
+---
+---
+
 /**
  * Reset some basic elements
  */
@@ -133,7 +136,7 @@ section {
   height: 80vh;
   min-height: 400px;
   width: 90vw;
-  background: url("/assets/flag-joe-raedle.jpg");
+  background: url("{{ "/assets/flag-joe-raedle.jpg" | relative_url }}");
   background-size: cover;
   background-position: top;
   background-repeat: no-repeat;
@@ -193,7 +196,7 @@ section {
   line-height: 1.4em;
 }
 #down {
-  background: url("/assets/down.svg");
+  background: url("{{ "/assets/down.svg" | relative_url }}");
   box-sizing: border-box;
   position: relative;
   margin: auto;
@@ -206,17 +209,17 @@ section {
   bottom: 3vh;
 }
 #ch1bg {
-  background: url("/assets/part1-cover-image.jpg");
+  background: url("{{ "/assets/part1-cover-image.jpg" | relative_url }}");
   background-position: top;
   background-size: cover;
 }
 #ch2bg {
-  background: url("/assets/part2-cover-image.jpg");
+  background: url("{{ "/assets/part2-cover-image.jpg" | relative_url }}");
   background-position: bottom;
   background-size: cover;
 }
 #ch3bg {
-  background: url("/assets/part3-cover-image.jpg");
+  background: url("{{ "/assets/part3-cover-image.jpg" | relative_url }}");
   background-position: left;
   background-size: cover;
 }
@@ -305,7 +308,7 @@ div.readch-app {
   padding: 0;
 }
 #right {
-  background: url("/assets/right.svg");
+  background: url("{{ "/assets/right.svg" | relative_url }}");
   height: 40px;
   width: 32px;
   background-size:cover;
@@ -316,7 +319,7 @@ div.readch-app {
   z-index: 4;
 }
 #righta {
-  background: url("/assets/right.svg");
+  background: url("{{ "/assets/right.svg" | relative_url }}");
   height: 1.5em;
   width: 1em;
   background-size:contain;
@@ -324,7 +327,7 @@ div.readch-app {
   background-position: center;
 }
 #right2b {
-  background: url("/assets/right.svg");
+  background: url("{{ "/assets/right.svg" | relative_url }}");
   height: 40px;
   width: 32px;
   background-size:cover;

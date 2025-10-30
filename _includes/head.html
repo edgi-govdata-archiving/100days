@@ -6,13 +6,13 @@
   <title>{{ site.title }}{% if page.title %}: {{ page.title | strip | strip_html }}{% endif %} | {{ site.author }}</title>
   <meta name="description" content="{{ site.description }}">
   <link rel="canonical" href="{{ site.production_url }}{{ page.url | replace:'index.html',''}}">
-  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="/feed.xml">
+  <link rel="alternate" type="application/rss+xml" title="{{ site.title }}" href="{{ "/feed.xml" | relative_url }}">
 
-  <link rel="stylesheet" href="/assets/{% if page.url == '/' %}main.css{% else %}post.css{% endif %}">
-  <link rel="stylesheet" href="/assets/tachyons.min.css"/>
+  <link rel="stylesheet" href="{{ site.baseurl }}/assets/{% if page.url == '/' %}main.css{% else %}post.css{% endif %}">
+  <link rel="stylesheet" href="{{ "/assets/tachyons.min.css" | relative_url }}"/>
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:600,700|Open+Sans+Condensed:300,700|Source+Sans+Pro:300,400,400i,600" rel="stylesheet">
-  <link rel="shortcut icon" href="/assets/favicon.ico" type="image/x-icon">
-  <link rel="icon" href="/assets/favicon.ico" type="image/x-icon">
+  <link rel="shortcut icon" href="{{ "/assets/favicon.ico" | relative_url }}" type="image/x-icon">
+  <link rel="icon" href="{{ "/assets/favicon.ico" | relative_url }}" type="image/x-icon">
 
   <!-- Open Graph -->
   <meta property="og:title" content="{% if page.title %}{{ page.title }}{% else %}{{ site.title }}{% endif %}"/>
@@ -34,10 +34,10 @@
       src="https://code.jquery.com/jquery-3.2.1.min.js"
       integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
       crossorigin="anonymous"></script>
-    <script src="/jquery.sticky.js"></script>
+    <script src="{{ "/jquery.sticky.js" | relative_url }}"></script>
     <script
       src="https://maps.googleapis.com/maps/api/js?key=AIzaSyC-NT3us7uJrevRXy3HWOrv6mQmahMglLk">
     </script>
-    <script src="/assets/scripts.js"></script>
+    <script src="{{ "/assets/scripts.js" | relative_url }}"></script>
   {% endif %}
 </head>

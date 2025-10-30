@@ -14,7 +14,7 @@ comments: false
 ---
 <body class="bg-white">
     <div>
-        <a id="logo" href="/index.html" title="Home" class=""><img alt="edgi-logo" src="/assets/edgi-logo-b.png" style="width:5vh;min-width:35px; height:auto;"></a>
+        <a id="logo" href="{{ "/index.html" | relative_url }}" title="Home" class=""><img alt="edgi-logo" src="{{ "/assets/edgi-logo-b.png" | relative_url }}" style="width:5vh;min-width:35px; height:auto;"></a>
     </div>
     <header>
         <div id="bg3" class="chbg"></div>
@@ -30,7 +30,7 @@ comments: false
         </div>
     </header>
     <div id="nav" class="w-100 pv1">
-        <a href="/index.html" title="Home" class=""> <img id="nav-logo" src="/assets/edgi-logo-b.png"> </a>
+        <a href="{{ "/index.html" | relative_url }}" title="Home" class=""> <img id="nav-logo" src="{{ "/assets/edgi-logo-b.png" | relative_url }}"> </a>
         <div id="nav-txt" class="di">
             <h3 class="f5 ttu tl mb0 di">Part 3</h3>
             <h3 class="f5 fw3 ttu tl mb0 di"> | {{ page.subtitle }}</h3>
@@ -40,7 +40,7 @@ comments: false
         <div class="left-sidebar">
             <div class="back-to-article dib mh3 dn-ns dn-m dib-l">
                 <div class="dib">
-                    <a href="/changing-digital-climate/" class="dib tc"> <img alt="top" src="/assets/back.png" class="" style="width:40px; margin-bottom:10px">
+                    <a href="{{ "/changing-digital-climate/" | relative_url }}" class="dib tc"> <img alt="top" src="{{ "/assets/back.png" | relative_url }}" class="" style="width:40px; margin-bottom:10px">
                         <h3 class="f5 fw1 ttu">Back to Main Article</h3>
                     </a>
                 </div>
@@ -82,7 +82,7 @@ comments: false
             <p>Once a report is written, it is sent to a pool of journalists who have indicated their interest in receiving EDGI&rsquo;s website monitoring reports. We typically use a 48-hour embargo, allowing time for journalists to investigate report content, before reports are released publicly and journalists are permitted to publish about them. EDGI will sometimes work exclusively with journalists in cases where additional targeted investigation will produce more impactful reporting. Read EDGI&rsquo;s journalist policy
                 <a href="https://docs.google.com/document/d/1EqY2rxItLZGC3n_nokQxzyeW_pTLP2cEKxYA8zMZO8Y/edit?usp%3Dsharing" target="_blank" rel="noopener">here</a>. </p>
             <div class="mt4">
-                <p class="tc"><img alt="EDGI_Logo" src="/assets/edgi-logo-b.png" style="width: 30px; height: 30px;"></p>
+                <p class="tc"><img alt="EDGI_Logo" src="{{ "/assets/edgi-logo-b.png" | relative_url }}" style="width: 30px; height: 30px;"></p>
             </div>
         </article>
     </main>

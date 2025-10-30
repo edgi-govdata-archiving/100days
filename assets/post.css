@@ -1,3 +1,6 @@
+---
+---
+
 /**
  * Reset some basic elements
  */
@@ -201,25 +204,25 @@ header {
   margin: 0;
 }
 #bg1 {
-  background: url("/assets/part1-cover-image.jpg");
+  background: url("{{ "/assets/part1-cover-image.jpg" | relative_url }}");
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
 }
 #bg2 {
-  background: url("/assets/part2-cover-image.jpg");
+  background: url("{{ "/assets/part2-cover-image.jpg" | relative_url }}");
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
 }
 #bg2a {
-  background: url("/assets/mustafa.jpg");
+  background: url("{{ "/assets/mustafa.jpg" | relative_url }}");
   background-position: bottom;
   background-size: cover;
   background-repeat: no-repeat;
 }
 #bg3 {
-  background: url("/assets/part3-cover-image.jpg");
+  background: url("{{ "/assets/part3-cover-image.jpg" | relative_url }}");
   background-position: left;
   background-size: cover;
   background-repeat: no-repeat;
@@ -456,10 +459,10 @@ figcaption.wide-fig {
 }
 
 #btm_throw_left_img {
-  background: url("/assets/ch1-cover.jpg");
+  background: url("{{ "/assets/ch1-cover.jpg" | relative_url }}");
 }
 #btm_throw_right_img{
-  background: url("/assets/ali.jpg");
+  background: url("{{ "/assets/ali.jpg" | relative_url }}");
 }
 #btm_throw_left_img, #btm_throw_right_img{
   box-sizing: border-box;
@@ -484,7 +487,7 @@ figcaption.wide-fig {
   text-decoration: underline;
 }
 #righta {
-  background: url("/assets/right.svg");
+  background: url("{{ "/assets/right.svg" | relative_url }}");
   height: 1.5em;
   width: 1em;
   background-size:contain;

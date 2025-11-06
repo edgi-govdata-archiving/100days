@@ -2,6 +2,8 @@
 
 # 100 Days
 
+⚠️ This website/report is about the **first Trump administration in 2017**.
+
 Website for the [EDGI 100 days report](http://100days.envirodatagov.org/), built with [Jekyll](https://jekyllrb.com/).
 
 ## License & Copyright

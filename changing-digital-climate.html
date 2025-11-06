@@ -13,8 +13,10 @@ redirect_from:
 comments: true
 ---
 <body class="bg-white">
-    <div><a id="logo" href="{{ "/index.html" | relative_url }}" title="Home" class=""><img alt="edgi-logo" src="{{ "/assets/edgi-logo-b.png" | relative_url }}" style="width:5vh;min-width:35px; height:auto;"></a></div>
+    {% include relevant-time-banner.html %}
+
     <header>
+        <div><a id="logo" href="{{ "/index.html" | relative_url }}" title="Home" class=""><img alt="edgi-logo" src="{{ "/assets/edgi-logo-b.png" | relative_url }}" style="width:5vh;min-width:35px; height:auto;"></a></div>
         <div id="bg3" class="chbg"></div>
         <div id="inner-wrapper">
             <div id="heds">
